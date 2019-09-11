@@ -260,13 +260,13 @@
 
 				<!-- Portfolio Item With PrettyPhoto  -->
 				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   videography isotope-item">
-					<div class="portfolio-image"> <img src="img/portfolio_pic1.jpg" alt="Portfolio 1"> </div>
-					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="http://clapat.ro/themes/newave/images/portfolio/portfolio2.jpg">
+					<div class="portfolio-image"> <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f7b579fb390684b6e77/1508965007315/Screen+Shot+2017-10-25+at+1.50.33+PM+copy.jpg?format=300w" alt="Portfolio 1"> </div>
+					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="anna.php">
 						<div class="project-overlay">
 							<div class="project-info">
 								<div class="zoom-icon"></div>
-								<h4 class="project-name">Leica Camera</h4>
-								<p class="project-categories">Videography</p>
+								<h4 class="project-name">Anna</h4>
+								<p class="project-categories">Mineralogy - pseudomorphs</p>
 							</div>
 						</div>
 					</a>
@@ -275,13 +275,13 @@
 
 				<!-- Portfolio Item Video Expander  -->
 				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-					<div class="portfolio-image"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
+					<div class="portfolio-image"> <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f251b631beb6a467551/1503596593978/Peter+Megaw.jpg?format=300w" alt="Portfolio 1"> </div>
 					<div class="project-overlay">
-						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-video-expander.html" title="Open Project"></a> </div>
+						<div class="open-project-link"> <a class="open-project" href="peter.php" title="Open Project"></a> </div>
 						<div class="project-info">
 							<div class="zoom-icon"></div>
-							<h4 class="project-name">Foto Template</h4>
-							<p class="project-categories">Design</p>
+							<h4 class="project-name">Peter</h4>
+							<p class="project-categories">Locality collector</p>
 						</div>
 					</div>
 				</div>
