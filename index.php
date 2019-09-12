@@ -112,13 +112,9 @@ include './parts/_header_main.php'
 
 		<!-- Container -->
 		<div class="container portfolio-title">
-
-			<!-- Section Title -->
 			<div class="section-title">
 				<h2>Miembros</h2>
 			</div>
-			<!--/Section Title -->
-
 		</div>
 		<!-- Container -->
 
@@ -141,7 +137,9 @@ include './parts/_header_main.php'
 			<div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
 
 				<!-- Portfolio Item With PrettyPhoto  -->
-				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   videography isotope-item">
+				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" 
+				class="portfolio-item one-four   videography isotope-item col">-->
+				<div class="col-md-4 videography" style="text-align: center;">
 					<div class="portfolio-image"> <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f7b579fb390684b6e77/1508965007315/Screen+Shot+2017-10-25+at+1.50.33+PM+copy.jpg?format=300w" alt="Portfolio 1"> </div>
 					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="./member.php">
 						<div class="project-overlay">
@@ -156,7 +154,8 @@ include './parts/_header_main.php'
 				<!--/Portfolio Item With PrettyPhoto  -->
 
 				<!-- Portfolio Item Video Expander  -->
-				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
+				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">-->
+				<div class="col-md-4" style="text-align: center;">
 					<div class="portfolio-image"> <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f251b631beb6a467551/1503596593978/Peter+Megaw.jpg?format=300w" alt="Portfolio 1"> </div>
 					<div class="project-overlay">
 						<div class="open-project-link"> <a class="open-project" href="./tmpl/members/peter.php" title="Open Project"></a> </div>
@@ -170,7 +169,8 @@ include './parts/_header_main.php'
 				<!--/Portfolio Item Video Expander  -->
 
 				<!-- Portfolio Item Normal Expander -->
-				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
+				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">-->
+				<div class="col-md-4" style="text-align: center;">
 					<div class="portfolio-image"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
 					<div class="project-overlay">
 						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-1.html" title="Open Project"></a> </div>
@@ -184,7 +184,8 @@ include './parts/_header_main.php'
 				<!--/Portfolio Item Normal Expander -->
 
 				<!-- Portfolio Item FullScreen Expander -->
-				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  photography  branding web isotope-item">
+				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  photography  branding web isotope-item">-->
+				<div class="col-md-4" style="text-align: center;">
 					<div class="portfolio-image"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
 					<div class="project-overlay">
 						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-1.html" title="Open Project"></a> </div>
@@ -198,7 +199,8 @@ include './parts/_header_main.php'
 				<!-- Portfolio Item FullScreen Expander -->
 
 				<!-- Portfolio Item FullScreen Expander -->
-				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
+				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">-->
+				<div class="col-md-4" style="text-align: center;">
 					<div class="portfolio-image"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
 					<div class="project-overlay">
 						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-2.html" title="Open Project"></a> </div>
@@ -212,7 +214,8 @@ include './parts/_header_main.php'
 				<!--/Portfolio Item FullScreen Expander -->
 
 				<!-- Portfolio Item Normal Expander -->
-				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
+				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">-->
+				<div class="col-md-4" style="text-align: center;">
 					<div class="portfolio-image"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
 					<div class="project-overlay">
 						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-2.html" title="Open Project"></a> </div>
@@ -226,7 +229,8 @@ include './parts/_header_main.php'
 				<!--/Portfolio Item Normal Expander -->
 
 				<!-- Portfolio Item External Project  -->
-				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
+				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">-->
+				<div class="col-md-4" style="text-align: center;">
 					<div class="portfolio-image"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
 					<a href="http://clapat.ro/themes/newave/project-external-1.html" class="external">
 						<div class="project-overlay">
@@ -239,22 +243,6 @@ include './parts/_header_main.php'
 					</a>
 				</div>
 				<!--/Portfolio Item External Project  -->
-
-				<!-- Portfolio Item With PrettyPhoto  -->
-				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   photography isotope-item">
-					<div class="portfolio-image"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
-					<a title="Stereo Headphones" rel="prettyPhoto[galname]" href="http://clapat.ro/themes/newave/images/portfolio/portfolio8.jpg">
-						<div class="project-overlay">
-							<div class="project-info">
-								<div class="zoom-icon"></div>
-								<h4 class="project-name">Art Frame</h4>
-								<p class="project-categories">Photography</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<!--/Portfolio Item With PrettyPhoto  -->
-
 			</div>
 			<!--/Portfolio Wrap -->
 
@@ -286,6 +274,24 @@ include './parts/_header_main.php'
 </section>
 
 -->
+	<section class="events">
+		<div class="container events-title">
+			<div class="section-title">
+				<h2>Eventos</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-md-4">
+				<a href="./events.php">
+					<h3 class="members_all">>Mostrar todos los eventos...</h3>
+				</a>
+			</div>
+		</div>
+		<div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
+
+		</div>
+	</section>
+
 
 	<section class="main-section" id="client_outer">
 		<!--main-section client-part-start-->

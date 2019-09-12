@@ -1,6 +1,6 @@
 <?php
 	$nombreusuario="root";
-	$passwordbd="dorlan164";
+	$passwordbd="root";
 	$servidor="localhost";
 	$basedatos="sgmdg";
 	

@@ -72,20 +72,18 @@
                 <ul class="toggle">
                     <li><a href="#top_content">Inicio</a></li>
                     <li><a href="#service">Servicios</a></li>
-                    <li><a href="#work_outer">Work</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#client_outer">Clients</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./index.php#work_outer">Acerca de</a></li>
+                    <li><a href="./index.php#Portfolio">Educación</a></li>
+                    <li><a href="./index.php#client_outer">Donar</a></li>
+                    <li><a href="./index.php#team">Unirte</a></li>
                 </ul>
                 <ul class="">
                     <li><a href="#top_content">Inicio</a></li>
                     <li><a href="#service">Servicios</a></li>
-                    <li><a href="#work_outer">Work</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#client_outer">Clients</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#work_outer">Acerca de</a></li>
+                    <li><a href="#Portfolio">Educación</a></li>
+                    <li><a href="#client_outer">Donar</a></li>
+                    <li><a href="#team">Unirte</a></li>
                 </ul>
             </nav>
             <a class="res-nav_click animated wobble wow" href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
