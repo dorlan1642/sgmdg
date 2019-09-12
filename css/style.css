@@ -176,7 +176,7 @@ p{
 	display:block;
 	font-size:14px;
 	color:#222222;
-	font-family:'Dosis';
+	font-family:"Times New Roman";
 	text-decoration:none;
 	text-transform:uppercase;
 	font-weight: 600;
@@ -1733,4 +1733,10 @@ img {
 	.members_all:hover{
 		color: #428bca !important;
 		font-size: 20px;
+	}
+	.marg-img{
+		max-height: 250px !important;
+		min-height: 271px;
+		margin-bottom: 1rem;
+
 	}

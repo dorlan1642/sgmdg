@@ -1,87 +1,50 @@
-<?php
-	include './php/conexion.php';
-	$resultado=$mysqli->query("select * from Events  order by created_at DESC")or die($mysqli->error);
-	
-	while ($fila=mysqli_fetch_array($resultado)){
-		$arreglo[]=array('Id'=>$fila['id'],
-			'Name'=>$fila['name'],
-			"Resume"=>$fila['resume'],
-			"Content"=>$fila['content'],
-			"Url_img"=>$fila['url_img']
-			);
-    }
-    
-    
 
-		
-?>
 
 <?php
-include './partes/_header.php'
+include './parts/_header.php'
 ?>
 <div class="container">
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th>Id</th>
-						<th>Nombre</th>
-						<th>Fecha de Nacimiento</th>
-						<th>Direccion</th>
-						<th>Telefono</th>
-						<th>Id Sucursal</th>
-						
-
-					</tr>
-					<tbody>
-						<?php 
+	<div class="row">
+	<?php 
 							include "./php/conexion.php";
 							$resultado=$mysqli->query("select * from Events")or die ($mysqli->error);
 								while ($fila= mysqli_fetch_array($resultado)) {
 
 								
 						 ?>
-						<tr>
-							
-							<td><?php echo $fila['id']; ?></td>
-							<td><?php echo $fila['name']; ?></td>
-							<td><?php echo $fila['resume'] ?></td>
-							<td><?php echo $fila['content']; ?></td>
-							<td><?php echo $fila['url_img']; ?></td>
-							
-							<td> 
-							 <a class="btn btn-primary"  href="./mod_caj.php?id_caj=<?php echo $fila['id_caj'] ?>"> Actualizar</a> 
-								<button  class="btnEliminar btn btn-warning">
-									eliminar
-								</button>
-
-								<div class="oculto" style="display: none;" >
-									Desea Eliminar el registro?
-									<a class="btn btn-danger " href="./php/eli-caj.php?id_caj=<?php echo $fila['id_caj'] ?>"
-				  style="">
-							si
-							</a>
-							<button class="btnNo btn btn-success">
-								no
-							</button>
-								</div>
-
-							</td>
-						<?php 
-
-							} 
-						 ?>
-
-						</tr>
-					</tbody>
-				</thead>
-			</table>
-            </div>
+		<div class="gray-lighter ">
+			<div class=" col-xs-12 col-sm-6 col-md-4  ">
+				<a href="./event.php?id=<?php echo $fila['id']; ?>">
+					<img class="img-thumbnail center-block  img-responsive marg-img " src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
+				<div>
+					<h3>
+					<?php echo $fila['date_event']; ?>
+					</h3>
+					<h5> <?php echo $fila['resume']; ?> </h5>
 				</div>
+				</a>
+			
 
 			</div>
 		</div>
+		<?php 
 
-        
+} 
+?>
+		
+		
+	</div>
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
 <?php
-include './partes/_footer.php'
+include './parts/_footer_main.php'
 ?>
