@@ -1,5 +1,5 @@
 <?php
-include './partes/_header.php'
+include './parts/_header_main.php'
 ?>
 
 
@@ -115,7 +115,7 @@ include './partes/_header.php'
 
 			<!-- Section Title -->
 			<div class="section-title">
-				<h2>Portfolio</h2>
+				<h2>Miembros</h2>
 			</div>
 			<!--/Section Title -->
 
@@ -128,39 +128,12 @@ include './partes/_header.php'
 		<div class="portfolio">
 
 			<!-- Portfolio Filters -->
-			<div id="filters" class="sixteen columns">
-				<ul class="clearfix">
-					<li>
-						<a id="all" href="#" data-filter="*" class="active">
-							<h5>All</h5>
-						</a>
-					</li>
-					<li>
-						<a class="" href="#" data-filter=".branding">
-							<h5>Branding</h5>
-						</a>
-					</li>
-					<li>
-						<a class="" href="#" data-filter=".design">
-							<h5>Design</h5>
-						</a>
-					</li>
-					<li>
-						<a class="" href="#" data-filter=".photography">
-							<h5>Photography</h5>
-						</a>
-					</li>
-					<li>
-						<a class="" href="#" data-filter=".videography">
-							<h5>Videography</h5>
-						</a>
-					</li>
-					<li>
-						<a class="" href="#" data-filter=".web">
-							<h5>Web</h5>
-						</a>
-					</li>
-				</ul>
+			<div class="container">
+				<div class="col-md-4">
+					<a href="./members.php">
+						<h3 class="members_all">>Mostrar todos los miembros...</h3>
+					</a>
+				</div>
 			</div>
 			<!--/Portfolio Filters -->
 
@@ -170,7 +143,7 @@ include './partes/_header.php'
 				<!-- Portfolio Item With PrettyPhoto  -->
 				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   videography isotope-item">
 					<div class="portfolio-image"> <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f7b579fb390684b6e77/1508965007315/Screen+Shot+2017-10-25+at+1.50.33+PM+copy.jpg?format=300w" alt="Portfolio 1"> </div>
-					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="anna.php">
+					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="./member.php">
 						<div class="project-overlay">
 							<div class="project-info">
 								<div class="zoom-icon"></div>
@@ -186,7 +159,7 @@ include './partes/_header.php'
 				<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
 					<div class="portfolio-image"> <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f251b631beb6a467551/1503596593978/Peter+Megaw.jpg?format=300w" alt="Portfolio 1"> </div>
 					<div class="project-overlay">
-						<div class="open-project-link"> <a class="open-project" href="peter.php" title="Open Project"></a> </div>
+						<div class="open-project-link"> <a class="open-project" href="./tmpl/members/peter.php" title="Open Project"></a> </div>
 						<div class="project-info">
 							<div class="zoom-icon"></div>
 							<h4 class="project-name">Peter</h4>
