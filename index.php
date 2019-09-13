@@ -121,10 +121,10 @@ include './parts/_header_main.php'
 		<div class="portfolio-top"></div>
 
 		<!-- Portfolio Plus Filters -->
-		<div class="portfolio">
+		<div class="container">
 
 			<!-- Portfolio Filters -->
-			<div class="container">
+			<div class="">
 				<div class="col-md-4">
 					<a href="./members.php">
 						<h3 class="members_all">>Mostrar todos los miembros...</h3>
@@ -135,145 +135,39 @@ include './parts/_header_main.php'
 
 			<!-- Portfolio Wrap -->
 			<div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
-
-				<!-- Portfolio Item With PrettyPhoto  -->
-				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" 
-				class="portfolio-item one-four   videography isotope-item col">-->
-				<div class="col-md-4 videography" style="text-align: center;">
-					<div class="portfolio-image"> <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f7b579fb390684b6e77/1508965007315/Screen+Shot+2017-10-25+at+1.50.33+PM+copy.jpg?format=300w" alt="Portfolio 1"> </div>
-					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="./member.php">
-						<div class="project-overlay">
-							<div class="project-info">
-								<div class="zoom-icon"></div>
-								<h4 class="project-name">Anna</h4>
-								<p class="project-categories">Mineralogy - pseudomorphs</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<!--/Portfolio Item With PrettyPhoto  -->
-
-				<!-- Portfolio Item Video Expander  -->
-				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">-->
-				<div class="col-md-4" style="text-align: center;">
-					<div class="portfolio-image"> <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f251b631beb6a467551/1503596593978/Peter+Megaw.jpg?format=300w" alt="Portfolio 1"> </div>
-					<div class="project-overlay">
-						<div class="open-project-link"> <a class="open-project" href="./tmpl/members/peter.php" title="Open Project"></a> </div>
-						<div class="project-info">
-							<div class="zoom-icon"></div>
-							<h4 class="project-name">Peter</h4>
-							<p class="project-categories">Locality collector</p>
+			<div class="container">
+				<div class="row">
+					<?php 
+						include "./php/conexion.php";
+						$resultado=$mysqli->query("select * from Members limit 6")or die ($mysqli->error);
+							while ($fila= mysqli_fetch_array($resultado)) {
+					?>
+					<div class="gray-lighter ">
+						<div class=" col-xs-12 col-sm-6 col-md-4 ">
+							<a href="./event.php?id=<?php echo $fila['id']; ?>">
+								<img class="img-thumbnail center-block  img-responsive marg-img image-focus" src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
+								<div>
+									<h4 class="index-h4"><?php echo $fila['date_event']; ?></h4>
+									<p class="index-p"><?php echo $fila['resume']; ?> </p>
+								</div>
+							</a>
 						</div>
 					</div>
-				</div>
-				<!--/Portfolio Item Video Expander  -->
-
-				<!-- Portfolio Item Normal Expander -->
-				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">-->
-				<div class="col-md-4" style="text-align: center;">
-					<div class="portfolio-image"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-					<div class="project-overlay">
-						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-1.html" title="Open Project"></a> </div>
-						<div class="project-info">
-							<div class="zoom-icon"></div>
-							<h4 class="project-name">Sony Phone</h4>
-							<p class="project-categories">Design</p>
-						</div>
-					</div>
-				</div>
-				<!--/Portfolio Item Normal Expander -->
-
-				<!-- Portfolio Item FullScreen Expander -->
-				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  photography  branding web isotope-item">-->
-				<div class="col-md-4" style="text-align: center;">
-					<div class="portfolio-image"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-					<div class="project-overlay">
-						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-1.html" title="Open Project"></a> </div>
-						<div class="project-info">
-							<div class="zoom-icon"></div>
-							<h4 class="project-name">Nike Shoes</h4>
-							<p class="project-categories">Photography, Web, Branding</p>
-						</div>
-					</div>
-				</div>
-				<!-- Portfolio Item FullScreen Expander -->
-
-				<!-- Portfolio Item FullScreen Expander -->
-				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">-->
-				<div class="col-md-4" style="text-align: center;">
-					<div class="portfolio-image"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-					<div class="project-overlay">
-						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-2.html" title="Open Project"></a> </div>
-						<div class="project-info">
-							<div class="zoom-icon"></div>
-							<h4 class="project-name">Vinyl Record</h4>
-							<p class="project-categories">Design</p>
-						</div>
-					</div>
-				</div>
-				<!--/Portfolio Item FullScreen Expander -->
-
-				<!-- Portfolio Item Normal Expander -->
-				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">-->
-				<div class="col-md-4" style="text-align: center;">
-					<div class="portfolio-image"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-					<div class="project-overlay">
-						<div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-2.html" title="Open Project"></a> </div>
-						<div class="project-info">
-							<div class="zoom-icon"></div>
-							<h4 class="project-name">iPhone</h4>
-							<p class="project-categories">Web</p>
-						</div>
-					</div>
-				</div>
-				<!--/Portfolio Item Normal Expander -->
-
-				<!-- Portfolio Item External Project  -->
-				<!--<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">-->
-				<div class="col-md-4" style="text-align: center;">
-					<div class="portfolio-image"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
-					<a href="http://clapat.ro/themes/newave/project-external-1.html" class="external">
-						<div class="project-overlay">
-							<div class="project-info">
-								<div class="zoom-icon"></div>
-								<h4 class="project-name">Nexus Phone</h4>
-								<p class="project-categories">Design, Web</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<!--/Portfolio Item External Project  -->
+				<?php 
+				} 
+				?>
 			</div>
-			<!--/Portfolio Wrap -->
-
 		</div>
-		<!--/Portfolio Plus Filters -->
 
 		<div class="portfolio-bottom"></div>
 
-		<!-- Project Page Holder-->
 		<div id="project-page-holder">
 			<div class="clear"></div>
 			<div id="project-page-data"></div>
 		</div>
-		<!--/Project Page Holder-->
 
 	</section>
-	<!--/Portfolio -->
 
-	<!--new_portfolio-->
-
-	<!--
-<section class="main-section paddind" id="Portfolio">
-	<div class="container">
-    	<h2>Portfolio</h2>
-    	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
-	</div>
-
-
-</section>
-
--->
 	<section class="events">
 		<div class="container events-title">
 			<div class="section-title">
@@ -288,7 +182,27 @@ include './parts/_header_main.php'
 			</div>
 		</div>
 		<div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
-
+			<div class="container">
+				<div class="row">
+					<?php 
+						include "./php/conexion.php";
+						$resultado=$mysqli->query("select * from Events limit 6")or die ($mysqli->error);
+							while ($fila= mysqli_fetch_array($resultado)) {
+					?>
+					<div class="gray-lighter ">
+						<div class=" col-xs-12 col-sm-6 col-md-4 ">
+							<a href="./event.php?id=<?php echo $fila['id']; ?>">
+								<img class="img-thumbnail center-block  img-responsive marg-img image-focus" src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
+								<div>
+									<h4 class="index-h4"><?php echo $fila['date_event']; ?></h4>
+									<p class="index-p"><?php echo $fila['resume']; ?> </p>
+								</div>
+							</a>
+						</div>
+					</div>
+				<?php 
+				} 
+				?>
 		</div>
 	</section>
 

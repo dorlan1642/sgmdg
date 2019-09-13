@@ -1740,3 +1740,19 @@ img {
 		margin-bottom: 1rem;
 
 	}
+	.image-focus{
+		transition-duration: 100ms;
+		transition-property: border-width;
+	}
+	.image-focus:hover{
+		border-color: deepskyblue;
+		border-width: 5px;
+	}
+	.index-h4{
+		font-size: 25;
+		color: gray;
+	}
+	.index-p{
+		font-size: 20;
+		color: gray;
+	}
