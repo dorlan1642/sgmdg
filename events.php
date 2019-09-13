@@ -9,8 +9,8 @@ include './parts/_header.php'
 							include "./php/conexion.php";
 							$resultado=$mysqli->query("select * from Events")or die ($mysqli->error);
 								while ($fila= mysqli_fetch_array($resultado)) {
-
-								
+	
+									
 						 ?>
 		<div class="gray-lighter ">
 			<div class=" col-xs-12 col-sm-6 col-md-4  ">
