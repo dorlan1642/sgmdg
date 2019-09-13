@@ -1,3 +1,4 @@
+ 
 <?php
 	$nombreusuario="user";
 	$passwordbd="Galeana2020.";
