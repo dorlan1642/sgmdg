@@ -3,18 +3,28 @@ include "parts/_header.php";
 ?>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f7b579fb390684b6e77/1508965007315/Screen+Shot+2017-10-25+at+1.50.33+PM+copy.jpg?format=300w" alt="Portfolio 1" class="img-rounded">
-        </div>
-        <div class="col-md-4">
-            <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59527f251b631beb6a467551/1503596593978/Peter+Megaw.jpg?format=300w" alt="" class="img-rounded">
-        </div>
-        <div class="col-md-4">
-            <img src="https://static1.squarespace.com/static/535eb676e4b091cbee171902/53611fb7e4b0a24f9e330011/59528211197aea04856da299/1503332702421/Sarah.jpg?format=300w" alt="" class="img-rounded">
-        </div>
-    </div>
-</div>
+	<div class="row">
+	<?php 
+		include "./php/conexion.php";
+		$resultado=$mysqli->query("select * from Members")or die ($mysqli->error);
+			while ($fila= mysqli_fetch_array($resultado)) {
+	?>
+		<div class="gray-lighter ">
+			<div class=" col-xs-12 col-sm-6 col-md-4  ">
+				<a href="./event.php?id=<?php echo $fila['id']; ?>">
+					<img class="img-thumbnail center-block  img-responsive marg-img " src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
+				<div>
+					<h3>
+					<?php echo $fila['date_event']; ?>
+					</h3>
+					<h5> <?php echo $fila['resume']; ?> </h5>
+				</div>
+				</a>
+			</div>
+		</div>
+	<?php 
+} 
+?>
 
 <?php
 include 'parts/_footer_main.php'
