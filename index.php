@@ -205,7 +205,7 @@ include './parts/_header_main.php'
 				<?php 
 					include "./admin/php/conexion.php";
 					$resultado=$mysqli->query("select id, title, news_content, DATE_FORMAT(news_date,'%d/%m/%Y') 
-					as news_date, url_img, created_by from News limit 6")or die ($mysqli->error);
+					as news_date, url_img, author from News limit 6")or die ($mysqli->error);
 						while ($fila= mysqli_fetch_array($resultado)) {
 				?>
 				<div class="gray-lighter ">

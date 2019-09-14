@@ -6,7 +6,7 @@ include "./parts/_header.php";
     include './admin/php/conexion.php';
     $id = $_GET['id'];
     $resultado = $mysqli->query("select id, title, news_content, DATE_FORMAT(news_date,'%d/%m/%Y') 
-    as news_date, url_img, created_by from News where id='$id'")or die($mysqli->error);
+    as news_date, url_img, author from News where id='$id'")or die($mysqli->error);
         while ($fila=mysqli_fetch_array($resultado)){
 ?>
 
@@ -22,7 +22,7 @@ include "./parts/_header.php";
     <div class="gray-lighter ">
         <h1 class="member-h1"><?php echo $fila['title']; ?> </h1>
         <p class="news-date">Publicado el 
-            <?php echo $fila['news_date'];?> por <?php echo $fila['created_by']; ?></p>
+            <?php echo $fila['news_date'];?> por <?php echo $fila['author']; ?></p>
         <p class="member-p"><?php echo $fila['news_content']; ?></p>
     </div>
 </div>
