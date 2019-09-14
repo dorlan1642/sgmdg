@@ -73,7 +73,8 @@
                     <li><a href="./index.php">Inicio</a></li>
                     <li><a href="./index.php#service">Services</a></li>
                     <li><a href="./index.php#work_outer">Acerca de</a></li>
-                    <li><a href="./index.php#Portfolio">Educación</a></li>
+					<li><a href="./index.php#Members">Miembros</a></li>
+                    <li><a href="./index.php#Events">Eventos</a></li>
                     <li><a href="./index.php#client_outer">Donar</a></li>
                     <li><a href="./index.php#team">Unirte</a></li>
                 </ul>
@@ -81,7 +82,8 @@
                     <li><a href="./index.php">Inicio</a></li>
                     <li><a href="./index.php#service">Servicios</a></li>
                     <li><a href="./index.php#work_outer">Acerca de</a></li>
-                    <li><a href="./index.php#Portfolio">Educación</a></li>
+					<li><a href="./index.php#Members">Miembros</a></li>
+                    <li><a href="./index.php#Events">Eventos</a></li>
                     <li><a href="./index.php#client_outer">Donar</a></li>
                     <li><a href="./index.php#team">Unirte</a></li>
                 </ul>
