@@ -18,6 +18,7 @@ if (isset($_SESSION['Id_user']) && isset($_SESSION['Name']) && isset($_SESSION['
     <meta lang='es'> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Admin &#8212; Panel de Administración</title>
+    <link rel="icon" href="../favicon.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.css" rel="stylesheet">
     <link rel="stylesheet" media="all" type="text/css" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css" />
