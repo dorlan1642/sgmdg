@@ -14,7 +14,7 @@ include './parts/_header.php'
     <div class="gray-lighter ">
         <h1 class="member-h1"> <?php echo $fila['name']; ?> </h1>
         <h1 class="member-h2"><?php echo $fila['date_event']; ?></h1>
-        <p class="member-p"><?php echo $fila['resume']; ?></p>
+        <p class="member-p"><?php echo $fila['content']; ?></p>
     </div>
 </div>
 
