@@ -4,7 +4,7 @@ include './parts/_header.php'
 
 <?php 
 	include './admin/php/conexion.php';
-	$id=$_GET['id']
+	$id=$_GET['id'];
 	$resultado=$mysqli->query("select * from Events where id='$id'")or die($mysqli->error);
 		while ($fila=mysqli_fetch_array($resultado)){
 ?>
