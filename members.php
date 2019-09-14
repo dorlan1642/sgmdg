@@ -3,6 +3,11 @@ include "parts/_header.php";
 ?>
 
 <div class="container">
+	<div class="container events-title">
+		<div class="section-title center">
+			<h2 style="text-align">Todos los miembros</h2>
+		</div>
+	</div>
 	<div class="row padding">
 	<?php 
 		include "./admin/php/conexion.php";
