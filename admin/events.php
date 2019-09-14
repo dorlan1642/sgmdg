@@ -64,13 +64,22 @@ include './partes/header_main.php';
                       
                     </div>
                   </div>
-                  <div class="col-md-12 mg-t--1 mg-md-t-0">
+
+
+                  <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
-                     
-                        <label class="title">Seleccione imagen paraeste evento <span class="tx-danger">*</span></label>
+                      <label class="title">La fecha para este evento <span class="tx-danger">*</span></label>
+                      <input class="form-control" colmd="6" id="date_picker" name="date_event" type="text" value="">
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mg-t--1 mg-md-t-0">
+                    <div class="form-group mg-md-l--1">
+                    <label class="title">Seleccione imagen para este evento <span class="tx-danger">*</span></label>
                         <input class="form-control" colmd="6" id="imagen" name="uploadedfile" type="file" value="">
-                      </div>
-                    
+                      
+                    </div>
                   </div>
 
 
@@ -102,6 +111,12 @@ include './partes/header_main.php';
   $(document).ready(function () {
     $('#summernote').summernote();
   });
+</script>
+<script type="text/javascript">
+$("#datetime").datetimepicker({
+    format: 'yyyy-mm-dd hh:ii',
+    autoclose: true
+});
 </script>
 </div>
 </div>
