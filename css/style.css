@@ -1735,9 +1735,9 @@ img {
 		font-size: 20px;
 	}
 	.marg-img{
-		/*max-height: 250px !important;
-		min-height: 271px;*/
+		border-radius: 10px;
 		max-height: 200px;
+		min-height: 200px !important;
 		margin-bottom: 1rem;
 
 	}
@@ -1787,4 +1787,19 @@ img {
 	}
 	.padding{
 		padding-bottom: 100px;
+	}
+	hr{
+		border-radius: 10px;
+		height: 5px;
+		background-color: #500000;
+	}
+	.center{
+		justify-content: center;
+	}
+	.news-date{
+		color: #5c5b5b;
+		text-align: center;
+		font-family: "Calibri";
+		font-style: italic;
+		font-size: 20px;
 	}
