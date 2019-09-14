@@ -70,18 +70,20 @@
             <div class="logo"><a href="javascript:void(0)"><img src="img/logob.png" alt=""></a></div>
             <nav class="nav" id="nav">
                 <ul class="toggle">
-                    <li><a href="#top_content">Inicio</a></li>
-                    <li><a href="#service">Servicios</a></li>
-                    <li><a href="./index.php#work_outer">Acerca de</a></li>
-                    <li><a href="./index.php#Portfolio">Educación</a></li>
-                    <li><a href="./index.php#client_outer">Donar</a></li>
-                    <li><a href="./index.php#team">Unirte</a></li>
+                    <li><a href="./index.php">Inicio</a></li>
+					<li><a href="#service">Servicios</a></li>
+					<li><a href="#work_outer">Acerca de</a></li>
+					<li><a href="#Members">Miembros</a></li>
+                    <li><a href="#Events">Eventos</a></li>
+                    <li><a href="#client_outer">Donar</a></li>
+                    <li><a href="#team">Unirte</a></li>
                 </ul>
                 <ul class="">
-                    <li><a href="#top_content">Inicio</a></li>
+                    <li><a href="./index.php">Inicio</a></li>
                     <li><a href="#service">Servicios</a></li>
-                    <li><a href="#work_outer">Acerca de</a></li>
-                    <li><a href="#Portfolio">Educación</a></li>
+					<li><a href="#work_outer">Acerca de</a></li>
+					<li><a href="#Members">Miembros</a></li>
+                    <li><a href="#Events">Eventos</a></li>
                     <li><a href="#client_outer">Donar</a></li>
                     <li><a href="#team">Unirte</a></li>
                 </ul>

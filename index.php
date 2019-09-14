@@ -1,8 +1,6 @@
 <?php
 include './parts/_header_main.php'
 ?>
-
-
 	<!--Top_content-->
 	<section id="top_content" class="top_cont_outer">
 		<div class="top_cont_inner">
@@ -103,51 +101,40 @@ include './parts/_header_main.php'
 			<!--<div class="work_pic"><img src="img/dashboard_pic.png" alt=""></div>-->
 		</div>
 	</section>
-	<!--main-section-end-->
 
-	<!--new_portfolio-->
+	<section id="Members" class="events padding">
 
-	<!-- Portfolio -->
-	<section id="Portfolio" class="content">
-
-		<!-- Container -->
 		<div class="container portfolio-title">
 			<div class="section-title">
-				<h2>Miembros</h2>
+				<h2 style="text-align: center;">Miembros</h2>
 			</div>
 		</div>
-		<!-- Container -->
 
 		<div class="portfolio-top"></div>
 
-		<!-- Portfolio Plus Filters -->
 		<div class="container">
 
-			<!-- Portfolio Filters -->
-			<div class="">
+			<div class="container">
 				<div class="col-md-4">
 					<a href="./members.php">
-						<h3 class="members_all">>Mostrar todos los miembros...</h3>
+						<h3 class="members_all">&rArr;Mostrar todos los miembros...</h3>
 					</a>
 				</div>
 			</div>
-			<!--/Portfolio Filters -->
-
-			<!-- Portfolio Wrap -->
-			<div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
+			
 			<div class="container">
 				<div class="row">
 					<?php 
-						include "./php/conexion.php";
+						include "./admin/php/conexion.php";
 						$resultado=$mysqli->query("select * from Members limit 6")or die ($mysqli->error);
 							while ($fila= mysqli_fetch_array($resultado)) {
 					?>
 					<div class="gray-lighter ">
 						<div class=" col-xs-12 col-sm-6 col-md-4 ">
-							<a href="./event.php?id=<?php echo $fila['id']; ?>">
+							<a href="./member.php?id=<?php echo $fila['id']; ?>">
 								<img class="img-thumbnail center-block  img-responsive marg-img image-focus" src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
 								<div>
-									<h4 class="index-h4"><?php echo $fila['date_event']; ?></h4>
+									<h4 class="index-h4"><?php echo $fila['name']; ?></h4>
 									<p class="index-p"><?php echo $fila['resume']; ?> </p>
 								</div>
 							</a>
@@ -156,53 +143,87 @@ include './parts/_header_main.php'
 				<?php 
 				} 
 				?>
+				</div>
 			</div>
 		</div>
-
-		<div class="portfolio-bottom"></div>
-
-		<div id="project-page-holder">
-			<div class="clear"></div>
-			<div id="project-page-data"></div>
-		</div>
-
 	</section>
 
-	<section class="events">
+	<section id="Events" class="events padding">
 		<div class="container events-title">
-			<div class="section-title">
-				<h2>Eventos</h2>
+			<div class="section-title center">
+				<h2 style="text-align">Eventos</h2>
 			</div>
 		</div>
 		<div class="container">
 			<div class="col-md-4">
 				<a href="./events.php">
-					<h3 class="members_all">>Mostrar todos los eventos...</h3>
+					<h3 class="members_all">&rArr;Mostrar todos los eventos...</h3>
 				</a>
 			</div>
 		</div>
-		<div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
-			<div class="container">
-				<div class="row">
-					<?php 
-						include "./php/conexion.php";
-						$resultado=$mysqli->query("select * from Events limit 6")or die ($mysqli->error);
-							while ($fila= mysqli_fetch_array($resultado)) {
-					?>
-					<div class="gray-lighter ">
-						<div class=" col-xs-12 col-sm-6 col-md-4 ">
-							<a href="./event.php?id=<?php echo $fila['id']; ?>">
-								<img class="img-thumbnail center-block  img-responsive marg-img image-focus" src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
-								<div>
-									<h4 class="index-h4"><?php echo $fila['date_event']; ?></h4>
-									<p class="index-p"><?php echo $fila['resume']; ?> </p>
-								</div>
-							</a>
-						</div>
-					</div>
+		<div class="container">
+			<div class="row ">
 				<?php 
-				} 
+					include "./admin/php/conexion.php";
+					$resultado=$mysqli->query("select * from Events limit 6")or die ($mysqli->error);
+						while ($fila= mysqli_fetch_array($resultado)) {
 				?>
+				<div class="gray-lighter ">
+					<div class=" col-xs-12 col-sm-6 col-md-4 ">
+						<a href="./event.php?id=<?php echo $fila['id']; ?>">
+							<img class="img-thumbnail center-block img-responsive marg-img image-focus" 
+							src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
+							<div>
+								<h4 class="index-h4"><?php echo $fila['name']; ?></h4>
+								<p class="index-p"><?php echo $fila['date_event']; ?> </p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<?php 
+				}
+				?>
+			</div>
+		</div>
+	</section>
+
+	<section id="News" class="events padding">
+		<div class="container events-title">
+			<div class="section-title center">
+				<h2 style="text-align">Noticias</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-md-4">
+				<a href="./news-all.php">
+					<h3 class="members_all">&rArr;Mostrar todas las noticias...</h3>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row ">
+				<?php 
+					include "./admin/php/conexion.php";
+					$resultado=$mysqli->query("select id, title, news_content, DATE_FORMAT(news_date,'%d/%m/%Y') 
+					as news_date, url_img, created_by from News limit 6")or die ($mysqli->error);
+						while ($fila= mysqli_fetch_array($resultado)) {
+				?>
+				<div class="gray-lighter ">
+					<div class=" col-xs-12 col-sm-6 col-md-4 ">
+						<a href="./news.php?id=<?php echo $fila['id']; ?>">
+							<img class="img-thumbnail center-block img-responsive marg-img image-focus" 
+							src="./img/img_news/<?php echo $fila['url_img']; ?>" alt="">
+							<div>
+								<h4 class="index-h4"><?php echo $fila['title']; ?></h4>
+								<p class="index-p">Publicado el <?php echo $fila['news_date']; ?></p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<?php 
+				}
+				?>
+			</div>
 		</div>
 	</section>
 
@@ -313,3 +334,7 @@ include './parts/_header_main.php'
 			<span>About 28 mins ago</span> </div>
 	</section>
 	<!--twitter-feed-end-->
+
+<?php
+include './parts/_footer_main.php'
+?>
