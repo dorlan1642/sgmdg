@@ -10,8 +10,9 @@ session_start();
 			
 		if(mysqli_num_rows($re)==1){
 			while ($fila=mysqli_fetch_array($re)){
-				$_SESSION['Id_us']=$fila['id_user'];
-				$_SESSION['Nombre']=$fila['nombre'];
+				$_SESSION['Id_user']=$fila['id_user'];
+				$_SESSION['Name']=$fila['name'];
+				$_SESSION['User']=$fila['user'];
 				
 			}
 			header("Location:../menu.php");
