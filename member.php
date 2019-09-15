@@ -10,6 +10,13 @@ include "./parts/_header.php";
 ?>
 
 <div class="container ">
+    <div class="container">
+			<div class="col-md-4">
+				<a href="./members.php">
+					<h3 class="members_all">&lArr; Volver a la lista de miembros</h3>
+				</a>
+			</div>
+		</div>
     <img class="img-thumbnail center-block  img-responsive member-img" src="./img/img_members/<?php echo $fila['url_img']; ?>" alt="">
     <div class="gray-lighter ">
         <h1 class="member-h1"> <?php echo $fila['name']; ?> </h1>

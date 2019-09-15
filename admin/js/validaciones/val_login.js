@@ -20,13 +20,11 @@ var carga=function(){
 	form.addEventListener('submit',function(event){
 	
 		if(usuario.value==""){
-			error.innerHTML="Error usuario vacío.";
+			error.innerHTML="Error: Usuario vacío.";
 			error.style.display="block"
-			error.style.backgroundColor="red"
-			error.style.color="ffffff"
 			event.preventDefault();
 		}else if(con.value==""){
-			error.innerHTML="Error: contraseña vacìa.";
+			error.innerHTML="Error: Contraseña vacía.";
 			error.style.display="block"
 			event.preventDefault();
 		}else{
