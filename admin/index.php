@@ -1,7 +1,5 @@
 <?php
-
     include "./partes/header.php"
-
 ?>
   
   <body>

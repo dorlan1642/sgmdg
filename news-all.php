@@ -8,6 +8,13 @@ include "parts/_header.php";
 			<h2 style="text-align">Todas las noticias</h2>
 		</div>
 	</div>
+	<div class="container">
+		<div class="col-md-4">
+			<a href="./index.php#News">
+				<h3 class="members_all">&lArr; Inicio</h3>
+			</a>
+		</div>
+	</div>
 	<div class="row padding">
 	<?php 
 		include "./admin/php/conexion.php";

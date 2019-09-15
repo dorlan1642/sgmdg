@@ -18,11 +18,11 @@ session_start();
 			header("Location:../menu.php");
 
 		}else{
-			header("Location:../index.php?error=Datos Erroneos");
+			header("Location:../index.php?error=Error: Datos erróneos");
 		}	
 
 	}else{
-		header("Location:../index.php?error=Datos Invalidos");
+		header("Location:../index.php?error=Error: Usuario inválido");
 	}
 
 

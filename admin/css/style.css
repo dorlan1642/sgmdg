@@ -34214,3 +34214,12 @@ a {
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;}
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {background: #dadada;}
 .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {font-weight: 400;}
+
+#error1, #error{
+  background-color: red;
+  color: white;
+  margin-bottom: 20px;
+}
+.ui-tooltip-content, .ui-tooltip{
+  display: none;
+}
