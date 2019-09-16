@@ -1735,7 +1735,7 @@ img {
 		font-size: 20px;
 	}
 	.marg-img{
-		border-radius: 10px;
+		/*border-radius: 10px;*/
 		max-height: 200px;
 		min-height: 200px !important;
 		margin-bottom: 1rem;
@@ -1749,16 +1749,15 @@ img {
 		border-color: deepskyblue;
 		border-width: 5px;
 	}
-	.index-h4{
-		text-align: center;
-		font-size: 25;
-		color: #222222;
+	.index-h3, .index-h4{
+		font-size: 18px;
+    	color: #49b5e7;
+		margin: 0 0 0 0;
 	}
-	.index-p{
-		text-align: center;
-		font-size: 20;
-		color: #444;
-		padding-bottom: 50px;
+	.index-span, .index-p{
+		display: block;
+    	font-size: 16px;
+		color: #888888;
 	}
 	.member-h1{
 		color: #111111;
@@ -1779,13 +1778,20 @@ img {
 		text-align: left;
 		font-family: "Georgia";
 		font-size: 30px;
-		margin-bottom: 100px;
 	}
 	.member-img{
 		max-height: 400px !important;
 		margin-bottom: 1rem;
 	}
 	.padding{
+		padding-bottom: 100px;
+	}
+	#padding-members, #padding-events, #padding-news{
+		padding-top: 100;
+		padding-bottom: 100px;
+	}
+	#padding-events{
+		padding-top: 100;
 		padding-bottom: 100px;
 	}
 	hr{

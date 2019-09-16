@@ -5,7 +5,7 @@ include './parts/_header.php'
 <div class="container">
 	<div class="container events-title">
 		<div class="section-title center">
-			<h2 style="text-align">Todas los eventos</h2>
+			<h2 style="text-align">Todos los eventos</h2>
 		</div>
 	</div>
 	<div class="container">
@@ -15,7 +15,7 @@ include './parts/_header.php'
 			</a>
 		</div>
 	</div>
-	<div class="row padding">
+	<div id="padding-events" class="row">
 	<?php 
 		include "./admin/php/conexion.php";
 		$resultado=$mysqli->query("select * from Events")or die ($mysqli->error);
@@ -26,9 +26,9 @@ include './parts/_header.php'
 			<div class=" col-xs-12 col-sm-6 col-md-4  ">
 				<a href="./event.php?id=<?php echo $fila['id']; ?>">
 					<img class="img-thumbnail center-block  img-responsive marg-img image-focus" src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
-					<div>
-						<h4 class="index-h4"><?php echo $fila['name']; ?></h4>
-						<p class="index-p"> <?php echo $fila['date_event']; ?> </p>
+					<div style="text-align: center;">
+						<h4 class="index-h3"><?php echo $fila['name']; ?></h4>
+						<p class="index-span"> <?php echo $fila['date_event']; ?> </p>
 					</div>
 				</a>
 			</div>

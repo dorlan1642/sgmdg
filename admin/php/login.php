@@ -18,7 +18,7 @@ session_start();
 			header("Location:../menu.php");
 
 		}else{
-			header("Location:../index.php?error=Error: Datos erróneos");
+			header("Location:../index.php?error=Error: Usuario o contraseña incorrecta");
 		}	
 
 	}else{

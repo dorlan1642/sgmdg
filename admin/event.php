@@ -55,7 +55,7 @@ include './partes/header_main.php';
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">El título para este evento <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="name" name="name" type="text" value="<?php echo $fila['name'];?>">
+                      <input class="form-control" colmd="6" id="name" name="name" type="text" value="<?php echo $fila['name'];?>" spellcheck="false">
 
                     </div>
                   </div>
@@ -63,7 +63,7 @@ include './partes/header_main.php';
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">El resumen para este evento <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="resume" name="resume" type="text" value="<?php echo $fila['resume'];?>">
+                      <input class="form-control" colmd="6" id="resume" name="resume" type="text" value="<?php echo $fila['resume'];?>" spellcheck="false">
 
                     </div>
                   </div>
@@ -71,7 +71,7 @@ include './partes/header_main.php';
                   <div class="col-md-12 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="description">Descripción </label>
-                      <textarea class="form-control" name="content" rows="4" cols="50" id="summernote" >
+                      <textarea class="form-control" name="content" rows="4" cols="50" id="summernote">
                       <?php echo $fila['name'];?>
                 </textarea>
 
@@ -83,7 +83,7 @@ include './partes/header_main.php';
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">La fecha para este evento <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="date_picker" name="date_event" type="text" value="<?php echo $fila['date_event'];?>">
+                      <input class="form-control" colmd="6" id="date_picker" name="date_event" type="text" value="<?php echo $fila['date_event'];?>" spellcheck="false">
 
                     </div>
                   </div>
@@ -191,7 +191,7 @@ include './partes/header_main.php';
 <script type="text/javascript">
 $("#datetime").datetimepicker({
     format: 'yyyy-mm-dd hh:ii',
-    autoclose: true
+    autoclose: true,
 });
 </script>
 </div>

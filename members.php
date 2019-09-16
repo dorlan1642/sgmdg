@@ -1,5 +1,5 @@
 <?php
-include "parts/_header.php";
+include "./parts/_header.php";
 ?>
 
 <div class="container">
@@ -15,7 +15,7 @@ include "parts/_header.php";
 			</a>
 		</div>
 	</div>
-	<div class="row padding">
+	<div id="padding-members" class="row">
 	<?php 
 		include "./admin/php/conexion.php";
 		$resultado=$mysqli->query("select * from Members")or die ($mysqli->error);
@@ -23,12 +23,12 @@ include "parts/_header.php";
 	?>
 
 		<div class="gray-lighter">
-			<div class=" col-xs-12 col-sm-6 col-md-4  ">
+			<div class=" col-xs-12 col-sm-6 col-md-4 ">
 				<a href="./member.php?id=<?php echo $fila['id']; ?>">
-					<img class="img-thumbnail center-block  img-responsive marg-img image-focus" src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
-					<div>
-						<h4 class="index-h4"><?php echo $fila['name']; ?></h4>
-						<p class="index-p"> <?php echo $fila['resume']; ?> </p>
+					<img class="img-thumbnail center-block  img-responsive marg-img image-focus" src="./img/img_members/<?php echo $fila['url_img']; ?>" alt="">
+					<div style="text-align: center;" class="padding">
+						<h4 class="index-h3"><?php echo $fila['name']; ?></h4>
+						<p class="index-span"> <?php echo $fila['title']; ?> </p>
 					</div>
 				</a>
 			</div>
@@ -39,5 +39,5 @@ include "parts/_header.php";
 </div>
 
 <?php
-include 'parts/_footer_main.php'
+include './parts/_footer_main.php'
 ?>
