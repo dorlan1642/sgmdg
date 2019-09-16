@@ -6,9 +6,9 @@ include './partes/header_main.php';
 
     <div class="slim-pageheader">
       <ol class="breadcrumb slim-breadcrumb">
-        [% path %]
+
       </ol>
-      <h6 class="slim-pagetitle"> [% action %] Tip</h6>
+      <h6 class="slim-pagetitle">Editar Evento</h6>
     </div>
     <p class="links float-right">
       <a href="events.php" class="btn btn-sm btn-primary"><i class="icon ion-navicon-round"></i> Lista de Eventos</a>
@@ -17,7 +17,22 @@ include './partes/header_main.php';
         Nuevo Evento</a>
     </p>
     <div class="clearfix"></div>
-    [% msg %]
+	<?php
+			if (isset($_GET['error'])) {
+
+        echo '<div class="alert alert-danger" id="error1">'.$_GET['error'].'</div>';
+
+			}elseif(isset($_GET['bien'])){
+        echo '<div class="alert alert-success" id="bien" role="alert">
+        '.$_GET['bien'].'
+        </div>';
+      }
+	?>
+        <div class="alert alert-success" id="error" role="alert">
+
+          </div>
+
+
     <div class="card">
       <div class="card-body">
         <ul class="nav nav-tabs" role="tablist">
@@ -31,7 +46,7 @@ include './partes/header_main.php';
           <div class="tab-pane show active" id="recipes-gral" role="tabpanel" aria-labelledby="users-gral-tab">
 
 
-            <form action="./php/eventNew.php" class="" enctype="multipart/form-data" id="tips" method="POST" name="events"
+            <form action="./php/eventNew.php" class="" enctype="multipart/form-data" id="formulario" method="POST" name="events"
                role="form">
               <div class="form-layout form-layout-3">
                 <div class="row no-gutters">
@@ -183,6 +198,7 @@ include './partes/header_main.php';
 <!-- include summernote css/js -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
 <script src="js/summernote.js"></script>
+<script src="js/validaciones/val_events.js"></script>
 <script>
   $(document).ready(function () {
     $('#summernote').summernote();

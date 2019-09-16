@@ -19,8 +19,6 @@
 				
 			if (isset($_GET['error'])) {
 				echo '<fieldset  id="error1">'.$_GET['error'].'</fieldset>';
-				
-				# code...
 			}
 		 ?>
         <fieldset id="error">
