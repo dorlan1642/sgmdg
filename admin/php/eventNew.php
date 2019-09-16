@@ -11,9 +11,10 @@
 
 	 }
 	 $mysqli->query("DELETE FROM Events WHERE id='$id'") or die($mysqli->error);
-	 header("Location:../events.php?bien=Eliminacion exitosa.");
+	 header("Location:../events.php?bien=Eliminación exitosa.");
 	
- }	
+ }	else {
+	
 
 if (isset($_POST['id'])  && $_POST['id']!= ""){
 		$id_event = $_POST['id'];
@@ -36,9 +37,9 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 		{$msg=$msg."El archivo es mayor que 2000KB, debes reduzcirlo antes de subirlo<BR>";
 		$uploadedfileload="false";}
 		
-		if (!($_FILES[uploadedfile][type] =="image/jpeg" OR $_FILES[uploadedfile][type] =="image/gif" OR $_FILES[uploadedfile][type] =="image/png"))
-		{$msg=$msg." Tu archivo tiene que ser JPG o GIF. Otros archivos no son permitidos<BR>";
-		$uploadedfileload="false";}
+		/*if (!($_FILES[uploadedfile][type] =="image/jpeg" OR $_FILES[uploadedfile][type] =="image/gif" OR $_FILES[uploadedfile][type] =="image/png"))
+		{$msg=$msg."Error: Error: Es necesario subir una imagen. Deben ser tipo .jpg o .gif<BR>";
+		$uploadedfileload="false";}*/
 		
 		$file_name=  $ranadd . "_" . $_FILES[uploadedfile][name] ;
 		$add="./../../img/img_events/$file_name";
@@ -68,7 +69,7 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 					or die ($mysqli->error);
 						
 		
-						header("Location:../events.php?bien= Actualizacion exitosa");
+						header("Location:../events.php?bien= Actualización exitosa");
 						
 		
 		
@@ -82,13 +83,11 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 		
 			} 
 		
+		}else
+		{
+			header("Location: ../event.php?error=error al subir el archivo"."&id=". $_POST['id'] );
 		
-	
-		
-		
-		
-		}elseheader("Location: ../event.php?error=error al subir el archivo"."&id=". $_POST['id'] );
-		
+		}
 		}else{
 			header("Location: ../event.php?error=  " . $msg."&id=". $_POST['id'] );
 		}
@@ -105,10 +104,10 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 	if ($_FILES[uploadedfile][size]>20000000)
 	{$msg=$msg."El archivo es mayor que 2000KB, debes reduzcirlo antes de subirlo<BR>";
 	$uploadedfileload="false";}
-	
-	if (!($_FILES[uploadedfile][type] =="image/jpeg" OR $_FILES[uploadedfile][type] =="image/gif" OR $_FILES[uploadedfile][type] =="image/png"))
-	{$msg=$msg." Tu archivo tiene que ser JPG o GIF. Otros archivos no son permitidos<BR>";
-	$uploadedfileload="false";}
+	 
+	/*if (!($_FILES[uploadedfile][type] =="image/jpeg" OR $_FILES[uploadedfile][type] =="image/gif" OR $_FILES[uploadedfile][type] =="image/png"))
+	{$msg=$msg."Error: Es necesario subir una imagen. Deben ser tipo .jpg o .gif<BR>";
+	$uploadedfileload="false";}*/
 	
 	$file_name=  $ranadd . "_" . $_FILES[uploadedfile][name] ;
 	$add="./../../img/img_events/$file_name";
@@ -138,15 +137,11 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 					(name , resume, content, url_img, date_event, created_at) 
 					values( '$name','$resume','$content','$file_name', STR_TO_DATE('$date_event', '%d-%m-%Y'), NOW())")
 					or die ($mysqli->error);
-					echo($id_us);
+					
 	
 					header("Location:../events.php?bien= Alta exitosa");
-					echo($id_us);
 	
-	
-			}else {
-				header("Location: ../event.php?error= Los campos no fueron completados"."&id=". $_POST['id']);
-			}
+			}elseheader("Location: ../event.php?error= Los campos no fueron completados"."&id=". $_POST['id']);
 	
 	
 		}else{
@@ -165,6 +160,7 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 }
 }
 
-
+ 
+} //primer else del code
 
 ?>

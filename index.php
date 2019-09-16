@@ -137,7 +137,7 @@ include './parts/_header_main.php'
 				$resultado=$mysqli->query("select * from Members limit 3")or die ($mysqli->error);
 				$flag=false;
 					while ($fila= mysqli_fetch_array($resultado)) {
-						if($flag == true){$class="flt";} else {$class="";}
+						if($flag == true){$class="flt"; $arrow="quote_arrow2";} else {$class=""; $arrow="quote_arrow";}
 			?>
 
 			<div class="client_section animated  fadeInUp wow">
@@ -150,7 +150,7 @@ include './parts/_header_main.php'
 						<span><?php echo $fila['title']; ?></span>
 				</div>
 				<div class="quote_section <?php echo $class ?>">
-					<div class="quote_arrow"></div>
+					<div class="<?php echo $arrow ?>"></div>
 					<p><b><img src="img/quote_sign_left.png" alt=""></b> <?php echo $fila['resume']; ?> <small><img
 								src="img/quote_sign_right.png" alt=""></small> </p>
 				</div>
