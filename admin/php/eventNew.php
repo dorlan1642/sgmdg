@@ -17,7 +17,7 @@
 
 if (isset($_POST['id'])  && $_POST['id']!= ""){
 		$id_event = $_POST['id'];
-		echo(($id_event));
+	
 
 		function generateRandomString($length = 10) { 
 			return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length); 
@@ -31,7 +31,7 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 		}
 		$uploadedfileload="true";
 		$uploadedfile_size=$_FILES[uploadedfile][size];
-		echo $_FILES[uploadedfile][name];
+	
 		if ($_FILES[uploadedfile][size]>20000000)
 		{$msg=$msg."El archivo es mayor que 2000KB, debes reduzcirlo antes de subirlo<BR>";
 		$uploadedfileload="false";}
@@ -66,30 +66,32 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 						
 					$mysqli->query("UPDATE Events SET name='$name',resume='$resume',content='$content',date_event=STR_TO_DATE('$date_event', '%d-%m-%Y'), url_img='$file_name' WHERE id='$id_event'")
 					or die ($mysqli->error);
-						echo($id_us);
+						
 		
 						header("Location:../events.php?bien= Actualizacion exitosa");
-						echo($id_us);
+						
 		
 		
 				}else {
-					header("Location: ../event.php?error= Los campos no fueron completados");
+					header("Location: ../event.php?error= Los campos no fueron completados"."&id=". $_POST['id']);
 				}
 		
 		
 			}else{
-					header("Location: ../event.php.php?error=  " + $_POST['id_us'] );
+					header("Location: ../event.php?error= " . $msg ."&id=". $_POST['id']);
 		
 			} 
 		
 		
-		echo " Ha sido subido satisfactoriamente";
+	
 		
 		
 		
-		}else{echo "Error al subir el archivo" ;}
+		}elseheader("Location: ../event.php?error=error al subir el archivo"."&id=". $_POST['id'] );
 		
-		}else{echo $msg;}
+		}else{
+			header("Location: ../event.php?error=  " . $msg."&id=". $_POST['id'] );
+		}
 
 }else{
 	function generateRandomString($length = 10) { 
@@ -143,12 +145,12 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 	
 	
 			}else {
-				header("Location: ../event.php?error= Los campos no fueron completados");
+				header("Location: ../event.php?error= Los campos no fueron completados"."&id=". $_POST['id']);
 			}
 	
 	
 		}else{
-				header("Location: ../event.php?error=" + $_POST['id_us'] );
+				header("Location: ../event.php?error= Los campos no fueron completados"."&id=". $_POST['id'] );
 	
 		} 
 	
@@ -156,10 +158,11 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 	echo " Ha sido subido satisfactoriamente";
 	
 	
-	
-	}else{echo "Error al subir el archivo" ;}
-	
-	}else{echo $msg;}
+}elseheader("Location: ../event.php?error=error al subir el archivo" );
+		
+}else{
+	header("Location: ../event.php?error=  " . $msg );
+}
 }
 
 

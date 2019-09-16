@@ -8,6 +8,19 @@ include './partes/header_main.php';
         <a href="event.php" class="btn btn-primary btn-sm"><span class="icon ion-plus"></span> Nuevo Evento</a>
       </p>
     <div class="clearfix"></div><br>
+    <?php
+			if (isset($_GET['error'])) {
+
+        echo '<div class="alert alert-danger" id="error1">'.$_GET['error'].'</div>';
+
+			}elseif(isset($_GET['bien'])){
+        echo '<div class="alert alert-success"id="bien" role="alert">
+        '.$_GET['bien'].'
+        </div>';
+      }
+	?>
+
+
     <div class="table-responsive">
       <!-- Created with CGI::List -->
       <table cellpadding="0" cellspacing="0"
