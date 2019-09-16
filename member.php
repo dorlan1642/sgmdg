@@ -19,9 +19,15 @@ include "./parts/_header.php";
 		</div>
     <img class="img-thumbnail center-block  img-responsive member-img" src="./img/img_members/<?php echo $fila['url_img']; ?>" alt="">
     <div class="gray-lighter ">
-        <h1 class="member-h1"> <?php echo $fila['name']; ?> </h1>
-        <h1 class="member-h2"><?php echo $fila['resume']; ?></h1>
-        <p class="member-p"><?php echo $fila['content']; ?></p>
+        <h1 class="member-h1"><?php echo $fila['name']; ?></h1>
+        <h1 class="member-h2"><?php echo $fila['title']; ?></h1>
+        
+        <div>
+            <h4 style="font-size: 30px;"><?php echo $fila['resume']; ?></h4>
+        </div>
+        <div>
+            <p style="margin-bottom: 100px;" class="member-p"><br><?php echo $fila['content']; ?></p>
+        </div>
     </div>
 </div>
 

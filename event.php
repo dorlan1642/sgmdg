@@ -20,8 +20,14 @@ include './parts/_header.php'
     <img class="img-thumbnail center-block  img-responsive member-img" src="./img/img_events/<?php echo $fila['url_img']; ?>" alt="">
     <div class="gray-lighter ">
         <h1 class="member-h1"> <?php echo $fila['name']; ?> </h1>
-        <h1 class="member-h2"><?php echo $fila['date_event']; ?></h1>
-        <p class="member-p"><?php echo $fila['content']; ?></p>
+		<h1 class="member-h2"><?php echo $fila['date_event']; ?></h1>
+		
+		<div>
+            <h4 style="font-size: 30px;"><?php echo $fila['resume']; ?></h4>
+        </div>
+        <div style="padding-bottom: 100px;">
+            <p style="margin-bottom: 100px;" class="member-p"><br><?php echo $fila['content']; ?></p>
+        </div>
     </div>
 </div>
 

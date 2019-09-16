@@ -1572,7 +1572,8 @@ p {
 /* ############### Forms ############### */
 /* ------------------------------------- */
 .form-control, .dataTables_filter input {
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 /* #################### VALIDATION #################### */
 .is-valid:focus, input.parsley-success:focus,
@@ -5135,7 +5136,8 @@ textarea.parsley-success:focus {
 .note-editor.note-frame {
   border: 1px solid #ced4da; }
   .note-editor.note-frame .note-editing-area .note-editable {
-    padding: 10px; }
+    padding: 10px;
+  }
   .note-editor.note-frame .note-statusbar {
     border-top: 1px solid #ced4da; }
 

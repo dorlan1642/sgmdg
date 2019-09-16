@@ -23,7 +23,9 @@ include "./parts/_header.php";
         <h1 class="member-h1"><?php echo $fila['title']; ?> </h1>
         <p class="news-date">Publicado el 
             <?php echo $fila['news_date'];?> por <?php echo $fila['author']; ?></p>
-        <p class="member-p"><?php echo $fila['news_content']; ?></p>
+        <div >
+            <p style="margin-bottom: 100px;" class="member-p"><?php echo $fila['news_content']; ?></p>
+        </div>
     </div>
 </div>
 
