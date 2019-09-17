@@ -41,6 +41,7 @@ var carga=function(){
 				error.innerHTML="Error: Es necesario subir una imagen. Deben ser tipo .jpg o .gif.";
 				error.style.display="block"
 				event.preventDefault();
+				$("html:not(:animated),body:not(:animated)").animate({ scrollTop: 0},100 );
 			}
 		}else{
 
