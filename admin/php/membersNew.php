@@ -4,7 +4,7 @@
  if(isset($_POST['_submit']) && $_POST['_submit'] == "Eliminar"){
 	 $id = $_POST['id'];
 	
-	 $resultado=$mysqli->query("SELECT url_img FROM Events WHERE id='$id'")or die ($mysqli->error);
+	 $resultado=$mysqli->query("SELECT url_img FROM Members WHERE id='$id'")or die ($mysqli->error);
 	 while ($fila= mysqli_fetch_array($resultado)) {
 		 print($fila['url_img']);
 	 unlink("./../../img/img_members/" . $fila['url_img']);
