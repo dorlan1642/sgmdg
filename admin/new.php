@@ -54,7 +54,7 @@ include './partes/header_main.php';
 
                   <?php 
                			if (isset($_GET['id'])) {
-                      echo ' <input id="id" name="id" type="hidden" value=" '. $_GET['id'] .' ">';
+                      echo ' <input id="id" name="id" type="hidden" value="'. $_GET['id'] .'">';
                       include './php/conexion.php';
                       
                        

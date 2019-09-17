@@ -65,7 +65,7 @@
 				if ($author !=""&& $title !="" && $news_content!="" && $news_date !=""){
 		
 						
-					$mysqli->query("UPDATE News SET author='$author', title='$title' ,news_content='$news_content',News_dateSTR_TO_DATE('$news_date', '%d-%m-%Y'), url_img='$file_name' WHERE id='$id_new'")
+					$mysqli->query("UPDATE News SET author='$author', title='$title' ,news_content='$news_content', news_date=STR_TO_DATE('$news_date', '%d-%m-%Y'), url_img='$file_name' WHERE id='$id_new'")
 					or die ($mysqli->error);
 						
 		
@@ -134,9 +134,9 @@
 	
 			if ($author !=""&& $title !="" && $news_content!="" && $news_date !=""){
 				
-				$mysqli->query("insert into News
-					(author , title, news_content, news_date, url_img, created_at) 
-					values( '$author', '$title', '$news_contnet', STR_TO_DATE('$news_date', '%d-%m-%Y'),'$file_name', NOW())")
+				$mysqli->query("INSERT INTO News
+					(author , title, news_content, url_img, news_date, created_at) 
+					VALUES( '$author', '$title', '$news_contnet','$file_name', STR_TO_DATE('$news_date', '%d-%m-%Y') , NOW())")
 					or die ($mysqli->error);
 					echo($id_us);
 	
