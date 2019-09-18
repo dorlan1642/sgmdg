@@ -30,8 +30,8 @@ include './partes/header_main.php';
           <tr>
             <th align="center">Foto </th>
             <th align="center">Nombre </th>
-            <th align="center">Titulo </th>
-            <th align="center">Resume</th>
+            <th align="center">Título </th>
+            <th align="center">Resumen </th>
           </tr>
         </thead>
         <tbody>

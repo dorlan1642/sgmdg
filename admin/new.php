@@ -97,7 +97,7 @@ include './partes/header_main.php';
 
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
-                      <label class="title">La fecha para aesta noticia <span class="tx-danger">*</span></label>
+                      <label class="title">La fecha para esta noticia <span class="tx-danger">*</span></label>
                       <input class="form-control" colmd="6" id="date_picker" name="news_date" type="text" value="<?php echo $fila['news_date'];?>" spellcheck="false">
 
                     </div>
@@ -147,7 +147,7 @@ include './partes/header_main.php';
 
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
-                      <label class="title">La fecha para aesta noticia <span class="tx-danger">*</span></label>
+                      <label class="title">La fecha para esta noticia <span class="tx-danger">*</span></label>
                       <input class="form-control" colmd="6" id="date_picker" name="news_date" type="text" value="" spellcheck="false">
 
                     </div>
@@ -199,7 +199,7 @@ include './partes/header_main.php';
 <!-- include summernote css/js -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
 <script src="js/summernote.js"></script>
-<script src="js/validaciones/val_newss.js"></script>
+<script src="js/validaciones/val_news.js"></script>
 <script>
   $(document).ready(function () {
     $('#summernote').summernote();

@@ -34,7 +34,7 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 		$uploadedfile_size=$_FILES[uploadedfile][size];
 	
 		if ($_FILES[uploadedfile][size]>20000000)
-		{$msg=$msg."El archivo es mayor que 2000KB, debes reduzcirlo antes de subirlo<BR>";
+		{$msg=$msg."El archivo es mayor que 2000KB, debes reducirlo antes de subirlo<BR>";
 		$uploadedfileload="false";}
 		
 		/*if (!($_FILES[uploadedfile][type] =="image/jpeg" OR $_FILES[uploadedfile][type] =="image/gif" OR $_FILES[uploadedfile][type] =="image/png"))
@@ -102,7 +102,7 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 	$uploadedfile_size=$_FILES[uploadedfile][size];
 	echo $_FILES[uploadedfile][name];
 	if ($_FILES[uploadedfile][size]>20000000)
-	{$msg=$msg."El archivo es mayor que 2000KB, debes reduzcirlo antes de subirlo<BR>";
+	{$msg=$msg."El archivo es mayor que 2000KB, debes reducirlo antes de subirlo<BR>";
 	$uploadedfileload="false";}
 	 
 	/*if (!($_FILES[uploadedfile][type] =="image/jpeg" OR $_FILES[uploadedfile][type] =="image/gif" OR $_FILES[uploadedfile][type] =="image/png"))

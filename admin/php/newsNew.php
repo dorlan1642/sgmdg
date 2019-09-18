@@ -35,9 +35,9 @@
 		{$msg=$msg."El archivo es mayor que 2000KB, debes reduzcirlo antes de subirlo<BR>";
 		$uploadedfileload="false";}
 		
-		if (!($_FILES[uploadedfile][type] =="image/jpeg" OR $_FILES[uploadedfile][type] =="image/gif" OR $_FILES[uploadedfile][type] =="image/png"))
+		/*if (!($_FILES[uploadedfile][type] =="image/jpeg" OR $_FILES[uploadedfile][type] =="image/gif" OR $_FILES[uploadedfile][type] =="image/png"))
 		{$msg=$msg." Tu archivo tiene que ser JPG o GIF. Otros archivos no son permitidos<BR>";
-		$uploadedfileload="false";}
+		$uploadedfileload="false";}*/
 		
 		$file_name=  $ranadd . "_" . $_FILES[uploadedfile][name] ;
 		$add="./../../img/img_news/$file_name";
@@ -65,7 +65,7 @@
 				if ($author !=""&& $title !="" && $news_content!="" && $news_date !=""){
 		
 						
-					$mysqli->query("UPDATE News SET author='$author', title='$title' ,news_content='$news_content', news_date=STR_TO_DATE('$news_date', '%d-%m-%Y'), url_img='$file_name' WHERE id='$id_new'")
+					$mysqli->query("UPDATE News SET author='$author', title='$title', news_content='$news_content', news_date=STR_TO_DATE('$news_date', '%d-%m-%Y'), url_img='$file_name' WHERE id='$id_new'")
 					or die ($mysqli->error);
 						
 		
@@ -136,7 +136,7 @@
 				
 				$mysqli->query("INSERT INTO News
 					(author , title, news_content, url_img, news_date, created_at) 
-					VALUES( '$author', '$title', '$news_contnet','$file_name', STR_TO_DATE('$news_date', '%d-%m-%Y') , NOW())")
+					VALUES( '$author', '$title', '$news_content','$file_name', STR_TO_DATE('$news_date', '%d-%m-%Y') , NOW())")
 					or die ($mysqli->error);
 					echo($id_us);
 	

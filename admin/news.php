@@ -5,7 +5,7 @@ include './partes/header_main.php';
   <div class="card-body">
   <p class="links float-right">
 
-        <a href="event.php" class="btn btn-primary btn-sm"><span class="icon ion-plus"></span> Nueva Noticia</a>
+        <a href="new.php" class="btn btn-primary btn-sm"><span class="icon ion-plus"></span> Nueva Noticia</a>
       </p>
     <div class="clearfix"></div><br>
     <?php
