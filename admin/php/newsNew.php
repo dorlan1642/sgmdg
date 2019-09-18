@@ -69,7 +69,7 @@
 					or die ($mysqli->error);
 						
 		
-						header("Location:../news.php?bien= Actualizacion exitosa");
+						header("Location:../news.php?bien= Actualización exitosa");
 						
 		
 		

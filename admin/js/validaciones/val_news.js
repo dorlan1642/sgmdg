@@ -3,8 +3,8 @@ var carga=function(){
     var form=document.getElementById('formulario');
         var author=document.getElementById('author');
         var title=document.getElementById('title')
-        var news_content=document.getElementById('content');
-        var news_date=document.getElementById('data_picker');
+        var news_content=document.getElementById('summernote');
+        var news_date=document.getElementById('date_picker');
 		var error=document.getElementById('error');
 		var error1=document.getElementById('error1');
 		var image=document.getElementById('imagen')
@@ -13,7 +13,7 @@ var carga=function(){
 			error.style.display="none";
 			error1.style.display="none";
 		});
-		title.addEventListener('keyup', function(){
+		news_content.addEventListener('keyup', function(){
 			error.style.display="none";
 			error1.style.display="none";
 		})
@@ -32,7 +32,7 @@ var carga=function(){
             event.preventDefault();
             $("html:not(:animated),body:not(:animated)").animate({ scrollTop: 0},100 );
         }else if(news_content.value==""){
-			error.innerHTML="Error: Contenido vacía.";
+			error.innerHTML="Error: Contenido vacío.";
 			error.style.display="block"
             event.preventDefault();
             $("html:not(:animated),body:not(:animated)").animate({ scrollTop: 0},100 );
