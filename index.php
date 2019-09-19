@@ -2,6 +2,9 @@
 include './parts/_header_main.php'
 ?>
 <!--Top_content-->
+
+
+<!--
 <section id="top_content" class="top_cont_outer">
 	<div class="top_cont_inner">
 		<div class="container">
@@ -24,9 +27,22 @@ include './parts/_header_main.php'
 		</div>
 	</div>
 </section>
+-->
 <!--Top_content-->
 
+<br>
+<br>	
+<div class="container">
+<div class="center-block">
+<iframe class="center-block" width="1050" height="600" src="https://www.youtube.com/embed/7KrzZhZs2DM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
+
+</div>
+
 <!--Service-->
+<!--
 <section id="service">
 	<div class="container">
 		<h2>Services</h2>
@@ -63,10 +79,11 @@ include './parts/_header_main.php'
 		</div>
 	</div>
 </section>
+-->
 <!--Service-->
 
-<section id="work_outer">
-	<!--main-section-start-->
+<!--
+
 	<div class="top_cont_latest">
 		<div class="container">
 			<h2>Latest Work</h2>
@@ -108,9 +125,12 @@ include './parts/_header_main.php'
 				</div>
 			</div>
 		</div>
+		-->
 		<!--<div class="work_pic"><img src="img/dashboard_pic.png" alt=""></div>-->
 	</div>
 </section>
+<br>
+<br>
 
 <section id="Members" class="events padding">
 
@@ -245,90 +265,6 @@ include './parts/_header_main.php'
 		</div>
 	</div>
 </section>
-
-<!--main-section client-part-end-->
-
-<div class="c-logo-part">
-	<!--c-logo-part-start-->
-	<div class="container">
-		<ul class="delay-06s animated  bounce wow">
-			<li><a href="javascript:void(0)"><img src="img/c-liogo1.png" alt=""></a></li>
-			<li><a href="javascript:void(0)"><img src="img/c-liogo2.png" alt=""></a></li>
-			<li><a href="javascript:void(0)"><img src="img/c-liogo3.png" alt=""></a></li>
-			<li><a href="javascript:void(0)"><img src="img/c-liogo5.png" alt=""></a></li>
-		</ul>
-	</div>
-</div>
-<!--c-logo-part-end-->
-<section class="main-section team" id="team">
-	<!--main-section team-start-->
-	<div class="container">
-		<h2>Amazing Team</h2>
-		<h6>Take a closer look into our amazing team. We won’t bite.</h6>
-		<div class="team-leader-block clearfix">
-			<div class="team-leader-box">
-				<div class="team-leader wow fadeInDown delay-03s">
-					<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-					<img src="img/team-leader-pic1.jpg" alt="">
-					<ul>
-						<li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-						<li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-						<li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-						<li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-					</ul>
-				</div>
-				<h3 class="wow fadeInDown delay-03s">Walter White</h3>
-				<span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-				<p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-					consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-			</div>
-			<div class="team-leader-box">
-				<div class="team-leader  wow fadeInDown delay-06s">
-					<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-					<img src="img/team-leader-pic2.jpg" alt="">
-					<ul>
-						<li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-						<li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-						<li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-						<li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-					</ul>
-				</div>
-				<h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
-				<span class="wow fadeInDown delay-06s">Product Manager</span>
-				<p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-					consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-			</div>
-			<div class="team-leader-box">
-				<div class="team-leader wow fadeInDown delay-09s">
-					<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-					<img src="img/team-leader-pic3.jpg" alt="">
-					<ul>
-						<li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-						<li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-						<li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-						<li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-					</ul>
-				</div>
-				<h3 class="wow fadeInDown delay-09s">Skyler white</h3>
-				<span class="wow fadeInDown delay-09s">Accountant</span>
-				<p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-					consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<!--main-section team-end-->
-
-<section class="twitter-feed">
-	<!--twitter-feed-->
-	<div class="container  animated fadeInDown delay-07s wow">
-		<div class="twitter_bird"><span><i class="fa-twitter"></i></span></div>
-		<p> When you're the underdog, your only option is to make #waves if you want to succeed. How much <br> and how
-			often should you be drinking coffee?</p>
-		<span>About 28 mins ago</span>
-	</div>
-</section>
-<!--twitter-feed-end-->
 
 <?php
 include './parts/_footer_main.php'
