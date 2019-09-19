@@ -11,7 +11,7 @@
 
 	 }
 	 $mysqli->query("DELETE FROM Members WHERE id='$id'") or die($mysqli->error);
-	 header("Location:../members.php?bien=Eliminacion exitosa.");
+	 header("Location:../members.php?bien=Eliminación exitosa.");
 	
  }	else{
 	
@@ -71,7 +71,7 @@
 					or die ($mysqli->error);
 						
 		
-						header("Location:../members.php?bien= Actualizacion exitosa");
+						header("Location:../members.php?bien= Actualización exitosa");
 						
 		
 		
