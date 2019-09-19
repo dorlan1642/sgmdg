@@ -61,7 +61,7 @@ if (isset($_SESSION['Id_user']) && isset($_SESSION['Name']) && isset($_SESSION['
       <div class="container">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="./../">
+            <a class="nav-link" href="./">
               <i class="icon ion-ios-home-outline"></i>
               <span>Dashboard</span>
             </a>
