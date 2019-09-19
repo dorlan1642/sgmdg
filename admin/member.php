@@ -104,9 +104,7 @@ include './partes/header_main.php';
                   <div class="col-md-12 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="description">Contenido </label>
-                      <textarea class="form-control" name="content" rows="4" cols="50" id="content">
-                        <?php echo $fila['content'];?>
-                      </textarea>
+                      <textarea class="form-control" name="content" rows="4" cols="50" id="content"><?php echo $fila['content'];?></textarea>
                     </div>
                   </div>
                   <?php        
