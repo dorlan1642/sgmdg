@@ -105,7 +105,8 @@ include './partes/header_main.php';
 
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
-                    <label class="title">Seleccione imagen para este evento <span class="tx-danger">*</span></label>
+                    <label class="title">Seleccione una imagen para este evento. Se recomienda que tenga relación de
+                        aspecto 1:1 (cuadrado) <span class="tx-danger">*</span></label>
                         <input class="form-control" colmd="6" id="imagen" name="uploadedfile" type="file" value="1">
                       
                     </div>
@@ -155,7 +156,8 @@ include './partes/header_main.php';
 
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
-                    <label class="title">Seleccione imagen para este evento <span class="tx-danger">*</span></label>
+                    <label class="title">Seleccione una imagen para este evento. Se recomienda que tenga relación de
+                        aspecto 1:1 (cuadrado) <span class="tx-danger">*</span></label>
                         <input class="form-control" colmd="6" id="imagen" name="uploadedfile" type="file" value="">
                       
                     </div>

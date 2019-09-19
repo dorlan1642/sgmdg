@@ -71,7 +71,7 @@ include './partes/header_main.php';
                     <div class="form-group mg-md-l--1">
                       <label class="title">El nombre para este miembro <span class="tx-danger">*</span></label>
                       <input class="form-control" colmd="6" id="name" name="name" type="text"
-                        value="<?php echo $fila['name'];?>" spellcheck="false">
+                        value="<?php echo $fila['name'];?>" autocomplete="off">
 
                     </div>
                   </div>
@@ -80,7 +80,7 @@ include './partes/header_main.php';
                     <div class="form-group mg-md-l--1">
                       <label class="title">El título para este miembro <span class="tx-danger">*</span></label>
                       <input class="form-control" colmd="6" id="title" name="title" type="text"
-                        value="<?php echo $fila['title'];?>" spellcheck="false">
+                        value="<?php echo $fila['title'];?>" autocomplete="off">
 
                     </div>
                   </div>
@@ -88,7 +88,7 @@ include './partes/header_main.php';
                     <div class="form-group mg-md-l--1">
                       <label class="title">El resumen para este miembro <span class="tx-danger">*</span></label>
                       <input class="form-control" colmd="6" id="resume" name="resume" type="text"
-                        value="<?php echo $fila['resume'];?>" spellcheck="false">
+                        value="<?php echo $fila['resume'];?>" autocomplete="off">
 
                     </div>
                   </div>
@@ -104,9 +104,7 @@ include './partes/header_main.php';
                   <div class="col-md-12 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="description">Contenido </label>
-                      <textarea class="form-control" name="content" rows="4" cols="50" id="content">
-                        <?php echo $fila['content'];?>
-                      </textarea>
+                      <textarea class="form-control" name="content" rows="4" cols="50" id="content"><?php echo $fila['content'];?></textarea>
                     </div>
                   </div>
                   <?php        
@@ -116,7 +114,7 @@ include './partes/header_main.php';
                     <div class="form-group mg-md-l--1">
                       <label class="title">El nombre para este miembro <span class="tx-danger">*</span></label>
                       <input class="form-control" colmd="6" id="name" name="name" type="text" value=""
-                        spellcheck="false">
+                      autocomplete="off">
 
                     </div>
                   </div>
@@ -125,7 +123,7 @@ include './partes/header_main.php';
                     <div class="form-group mg-md-l--1">
                       <label class="title">El título para este miembro <span class="tx-danger">*</span></label>
                       <input class="form-control" colmd="6" id="title" name="title" type="text" value=""
-                        spellcheck="false">
+                      autocomplete="off">
 
                     </div>
                   </div>
@@ -133,7 +131,7 @@ include './partes/header_main.php';
                     <div class="form-group mg-md-l--1">
                       <label class="title">El resumen para este miembro <span class="tx-danger">*</span></label>
                       <input class="form-control" colmd="6" id="resume" name="resume" type="text" value=""
-                        spellcheck="false">
+                      autocomplete="off">
 
                     </div>
                   </div>
@@ -149,7 +147,7 @@ include './partes/header_main.php';
 
                   <div class="col-md-12 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
-                      <label class="description">Descripción </label>
+                      <label class="description">Contenido </label>
                       <textarea class="form-control" name="content" rows="4" cols="50" id="content"></textarea>
                     </div>
                   </div>

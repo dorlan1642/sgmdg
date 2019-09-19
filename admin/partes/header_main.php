@@ -7,7 +7,7 @@ if (isset($_SESSION['Id_user']) && isset($_SESSION['Name']) && isset($_SESSION['
 
 
 }else{	
-	header("Location:./index.php?error=Favor de iniciar sesion");
+	header("Location:./index.php?error=Favor de iniciar sesión");
 	
 }
 ?>

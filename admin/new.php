@@ -70,7 +70,7 @@ include './partes/header_main.php';
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">El título para esta noticia <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="title" name="title" type="text" value="<?php echo $fila['title'];?>" spellcheck="false">
+                      <input class="form-control" colmd="6" id="title" name="title" type="text" value="<?php echo $fila['title'];?>" autocomplete="off">
 
                     </div>
                   </div>
@@ -78,7 +78,7 @@ include './partes/header_main.php';
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">Autor de la noticia <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="author" name="author" type="text" value="<?php echo $fila['author'];?>" spellcheck="false">
+                      <input class="form-control" colmd="6" id="author" name="author" type="text" value="<?php echo $fila['author'];?>" autocomplete="off">
 
                     </div>
                   </div>
@@ -98,14 +98,15 @@ include './partes/header_main.php';
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">La fecha para esta noticia <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="date_picker" name="news_date" type="text" value="<?php echo $fila['news_date'];?>" spellcheck="false">
+                      <input class="form-control" colmd="6" id="date_picker" name="news_date" type="text" value="<?php echo $fila['news_date'];?>" autocomplete="off">
 
                     </div>
                   </div>
 
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
-                    <label class="title">Seleccione imagen para esta noticia  <span class="tx-danger">*</span></label>
+                    <label class="title">Seleccione una imagen para esta noticia. Se recomienda que tenga relación de
+                        aspecto 1:1 (cuadrado) <span class="tx-danger">*</span></label>
                         <input class="form-control" colmd="6" id="imagen" name="uploadedfile" type="file" value="1">
                       
                     </div>
@@ -120,7 +121,7 @@ include './partes/header_main.php';
                                        <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">El título para esta noticia <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="title" name="title" type="text" value="" spellcheck="false">
+                      <input class="form-control" colmd="6" id="title" name="title" type="text" value="" autocomplete="off">
 
                     </div>
                   </div>
@@ -128,7 +129,7 @@ include './partes/header_main.php';
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">Autor de la noticia <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="author" name="author" type="text" value="" spellcheck="false">
+                      <input class="form-control" colmd="6" id="author" name="author" type="text" value="" autocomplete="off">
 
                     </div>
                   </div>
@@ -148,14 +149,15 @@ include './partes/header_main.php';
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
                       <label class="title">La fecha para esta noticia <span class="tx-danger">*</span></label>
-                      <input class="form-control" colmd="6" id="date_picker" name="news_date" type="text" value="" spellcheck="false">
+                      <input class="form-control" colmd="6" id="date_picker" name="news_date" type="text" value="" autocomplete="off">
 
                     </div>
                   </div>
 
                   <div class="col-md-6 mg-t--1 mg-md-t-0">
                     <div class="form-group mg-md-l--1">
-                    <label class="title">Seleccione imagen para esta noticia  <span class="tx-danger">*</span></label>
+                    <label class="title">Seleccione una imagen para esta noticia. Se recomienda que tenga relación de
+                        aspecto 1:1 (cuadrado) <span class="tx-danger">*</span></label>
                         <input class="form-control" colmd="6" id="imagen" name="uploadedfile" type="file" value="">
                       
                     </div>
