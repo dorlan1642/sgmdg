@@ -76,7 +76,7 @@
 					<li><a href="#Members">Miembros</a></li>
                     <li><a href="#Events">Eventos</a></li>
                     <li><a href="#client_outer">Donar</a></li>
-                    <li><a href="#team">Unirte</a></li>
+                    <li><a href="#contact">Unirte</a></li>
                 </ul>
                 <ul class="">
                     <li><a href="./index.php">Inicio</a></li>
@@ -85,7 +85,7 @@
 					<li><a href="#Members">Miembros</a></li>
                     <li><a href="#Events">Eventos</a></li>
                     <li><a href="#client_outer">Donar</a></li>
-                    <li><a href="#team">Unirte</a></li>
+                    <li><a href="#contact">Unirte</a></li>
                 </ul>
             </nav>
             <a class="res-nav_click animated wobble wow" href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
