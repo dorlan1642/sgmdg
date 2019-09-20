@@ -75,8 +75,9 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Butterfly
           -->
-					  <p>Desarrollado por: <a href="mailto:flavio.almanza01@gmail.com" target="_blank">Flavio Almanza</a></p>
-					  <p>Revisado por: <a href="mailto:hectoralmanzagamb@gmail.com" target="_blank">Orlando Almanza</a></p>
+					  <p>Desarrollado por: </p>
+					  <p><a href="mailto:hectoralmanzagamb@gmail.com" target="_blank">Orlando Almanza</a><br>
+					  <a href="mailto:flavio.almanza01@gmail.com" target="_blank">Flavio Almanza</a></p>
 				</div>
 			</div>
 		</div>

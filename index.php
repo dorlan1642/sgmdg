@@ -33,8 +33,8 @@ include './parts/_header_main.php'
 <br>
 <br>	
 <div class="container">
-<div class="center-block">
-<iframe class="center-block" width="1050" height="600" src="https://www.youtube.com/embed/7KrzZhZs2DM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="center-block  iframe-container">
+<iframe src="https://www.youtube.com/embed/7KrzZhZs2DM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 </div>

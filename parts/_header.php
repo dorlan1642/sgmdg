@@ -75,7 +75,7 @@
                     <li><a href="./index.php#work_outer">Acerca de</a></li>
 					<li><a href="./index.php#Members">Miembros</a></li>
                     <li><a href="./index.php#Events">Eventos</a></li>
-                    <li><a href="./index.php#client_outer">Donar</a></li>
+                    <li><a href="./index.php#News">Noticias</a></li>
                     <li><a href="#contact">Unirte</a></li>
                 </ul>
                 <ul class="">
@@ -84,7 +84,7 @@
                     <li><a href="./index.php#work_outer">Acerca de</a></li>
 					<li><a href="./index.php#Members">Miembros</a></li>
                     <li><a href="./index.php#Events">Eventos</a></li>
-                    <li><a href="./index.php#client_outer">Donar</a></li>
+                    <li><a href="./index.php#News">Noticias</a></li>
                     <li><a href="#contact">Unirte</a></li>
                 </ul>
             </nav>
