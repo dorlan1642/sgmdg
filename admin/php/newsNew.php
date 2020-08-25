@@ -23,12 +23,14 @@
 		} 
 		$ranadd =   generateRandomString();
 		$resultado=$mysqli->query("SELECT url_img FROM News WHERE id='$id_new'")or die ($mysqli->error);
-		while ($fila= mysqli_fetch_array($resultado)) {
-			print($fila['url_img']);
-		unlink("./../../img/img_news/" . $fila['url_img']);
+		if ($_FILES[uploadedfile][size] > 0) {
+			while ($fila= mysqli_fetch_array($resultado)) {
+				print($fila['url_img']);
+			unlink("./../../img/img_news/" . $fila['url_img']);
 
-		}
+			}
 		$uploadedfileload="true";
+		}
 		$uploadedfile_size=$_FILES[uploadedfile][size];
 	
 		if ($_FILES[uploadedfile][size]>20000000)
@@ -91,7 +93,44 @@
 		}elseheader("Location: ../new.php?error=error al subir el archivo"."&id=". $_POST['id'] );
 		
 		}else{
-			header("Location: ../new.php?error=  " . $msg."&id=". $_POST['id'] );
+		//	header("Location: ../new.php?error=  " . $msg."&id=". $_POST['id'] );
+		if ( isset($_POST['author']) && isset($_POST['title']) && isset($_POST['news_content']) && isset($_POST['news_date'])){
+		
+		
+			$author =$_POST['author'];
+			$title=$_POST['title'];
+			$news_content=$_POST['news_content'];
+			$news_date=$_POST['news_date'];
+
+			
+			$author= addslashes($author);
+			$title = addslashes($title);
+			$news_content = addslashes($news_content);
+	
+			#$tag_line = stripslashes($tag_line);
+	
+	
+	
+			if ($author !=""&& $title !="" && $news_content!="" && $news_date !=""){
+	
+					
+				$mysqli->query("UPDATE News SET author='$author', title='$title', news_content='$news_content', news_date=STR_TO_DATE('$news_date', '%d-%m-%Y') WHERE id='$id_new'")
+				or die ($mysqli->error);
+					
+	
+					header("Location:../news.php?bien= Actualización exitosa");
+					
+	
+	
+			}else {
+				header("Location: ../news.php?error= Los campos no fueron completados"."&id=". $_POST['id']);
+			}
+	
+	
+		}else{
+				header("Location: ../new.php?error= Los campos no fueron completados" . $msg ."&id=". $_POST['id']);
+	
+		} 
 		}
 
 }else{

@@ -25,12 +25,14 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 		} 
 		$ranadd =   generateRandomString();
 		$resultado=$mysqli->query("SELECT url_img FROM Events WHERE id='$id_event'")or die ($mysqli->error);
+		if ($_FILES[uploadedfile][size] > 0) {
 		while ($fila= mysqli_fetch_array($resultado)) {
 			print($fila['url_img']);
 		unlink("./../../img/img_events/" . $fila['url_img']);
 
 		}
 		$uploadedfileload="true";
+	}
 		$uploadedfile_size=$_FILES[uploadedfile][size];
 	
 		if ($_FILES[uploadedfile][size]>20000000)
@@ -43,7 +45,7 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 		
 		$file_name=  $ranadd . "_" . $_FILES[uploadedfile][name] ;
 		$add="./../../img/img_events/$file_name";
-		if($uploadedfileload=="true"){
+	if($uploadedfileload=="true"){
 		
 		if(move_uploaded_file ($_FILES[uploadedfile][tmp_name], $add)){
 		
@@ -89,7 +91,43 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 		
 		}
 		}else{
-			header("Location: ../event.php?error=  " . $msg."&id=". $_POST['id'] );
+			//header("Location: ../event.php?error=  " . $msg."&id=". $_POST['id'] );
+
+			if ( isset($_POST['name']) && isset($_POST['resume']) && isset($_POST['content'])&& isset($_POST['date_event'])){
+		
+		
+				$name =$_POST['name'];
+				$resume=$_POST['resume'];
+				$content=$_POST['content'];
+				$date_event=$_POST['date_event'];
+				
+				$name = addslashes($name);
+				$resume = addslashes($resume);
+				$content = addslashes($content);
+				#$tag_line = stripslashes($tag_line);
+		
+		
+		
+				if ($name !="" && $resume!="" && $content !="" && $date_event!=""){
+		
+						
+					$mysqli->query("UPDATE Events SET name='$name',resume='$resume',content='$content',date_event=STR_TO_DATE('$date_event', '%d-%m-%Y') WHERE id='$id_event'")
+					or die ($mysqli->error);
+						
+		
+						header("Location:../events.php?bien= Actualización exitosa");
+						
+		
+		
+				}else {
+					header("Location: ../event.php?error= Los campos no fueron completados"."&id=". $_POST['id']);
+				}
+		
+		
+			}else{
+					header("Location: ../event.php?error= " . $msg ."&id=". $_POST['id']);
+		
+			} 
 		}
 
 }else{
@@ -146,6 +184,7 @@ if (isset($_POST['id'])  && $_POST['id']!= ""){
 	
 		}else{
 				header("Location: ../event.php?error= Los campos no fueron completados"."&id=". $_POST['id'] );
+
 	
 		} 
 	

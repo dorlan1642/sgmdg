@@ -25,12 +25,18 @@
 		} 
 		$ranadd =   generateRandomString();
 		$resultado=$mysqli->query("SELECT url_img FROM Members WHERE id='$id_member'")or die ($mysqli->error);
-		while ($fila= mysqli_fetch_array($resultado)) {
-			print($fila['url_img']);
-		unlink("./../../img/img_members/" . $fila['url_img']);
+		
+		if ($_FILES[uploadedfile][size] > 0) {
+			while ($fila= mysqli_fetch_array($resultado)) {
+				print($fila['url_img']);
+				unlink("./../../img/img_members/" . $fila['url_img']);
+			}
+		$uploadedfileload="true";
+		
+		
 
 		}
-		$uploadedfileload="true";
+		
 		$uploadedfile_size=$_FILES[uploadedfile][size];
 	
 		if ($_FILES[uploadedfile][size]>20000000)
@@ -93,7 +99,51 @@
 		}elseheader("Location: ../member.php?error=error al subir el archivo"."&id=". $_POST['id'] );
 		
 		}else{
-			header("Location: ../member.php?error=  " . $msg."&id=". $_POST['id'] );
+			//header("Location: ../member.php?error222=  " . $msg."&id=". $_POST['id'] );
+
+			if ( isset($_POST['name'])&& isset($_POST['title']) && isset($_POST['resume']) && isset($_POST['content'])){
+		
+		
+				$name =$_POST['name'];
+				$title=$_POST['title'];
+				$resume=$_POST['resume'];
+				$content=$_POST['content'];
+
+				
+				$name = addslashes($name);
+				$title = addslashes($title);
+				$resume = addslashes($resume);
+				$content = addslashes($content);
+				#$tag_line = stripslashes($tag_line);
+		
+		
+		
+				if ($name !=""&& $title !="" && $resume!="" && $content !=""){
+
+
+					$mysqli->query("UPDATE Members SET name='$name', title='$title' ,resume='$resume',content='$content' WHERE id='$id_member'")
+					or die ($mysqli->error);
+						
+		
+						header("Location:../members.php?bien= Actualización exitosa");
+						
+		
+		
+				}else {
+					header("Location: ../member.php?error= Los campos no fueron completados"."&id=". $_POST['id']);
+				}
+		
+		
+			}else{
+					header("Location: ../member.php?error=1111 " . $msg ."&id=". $_POST['id']);
+		
+			} 
+		
+		
+	
+		
+		
+		
 		}
 
 }else{

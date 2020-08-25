@@ -166,7 +166,15 @@ include './partes/header_main.php';
                     ?>
                   <button type="submit" class="btn btn-danger"
                     onclick="this.form._submit.value = 'Eliminar';"><i>Eliminar</i></button>
+                    <input class="form-control" id="actualizacion" name="actualizacion" type="hidden" value="actualizacion"
+                      autocomplete="off">
                   <?php 
+                      }else{
+
+                    ?> 
+                    <input class="form-control" id="actualizacion" name="actualizacion" type="hidden" value=""
+                      autocomplete="off">
+                  <?php   
                       }
                     
                     ?>
