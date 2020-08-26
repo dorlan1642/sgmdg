@@ -71,7 +71,7 @@
             <nav class="nav" id="nav">
                 <ul class="toggle">
                     <li><a href="./index.php">Inicio</a></li>
-                    <li><a href="./index.php#service">Services</a></li>
+                    <!-- <li><a href="./index.php#service">Services</a></li> -->
                     <li><a href="./index.php#work_outer">Acerca de</a></li>
 					<li><a href="./index.php#Members">Miembros</a></li>
                     <li><a href="./index.php#Events">Eventos</a></li>
@@ -80,7 +80,7 @@
                 </ul>
                 <ul class="">
                     <li><a href="./index.php">Inicio</a></li>
-                    <li><a href="./index.php#service">Servicios</a></li>
+                    <!-- <li><a href="./index.php#service">Servicios</a></li> -->
                     <li><a href="./index.php#work_outer">Acerca de</a></li>
 					<li><a href="./index.php#Members">Miembros</a></li>
                     <li><a href="./index.php#Events">Eventos</a></li>

@@ -37,7 +37,7 @@
 							<li class="dribbble animated bounceIn wow delay-06s"><a href="javascript:void(0)"><i class="fa-dribbble"></i></a></li>-->
 						</ul>
 					</div>
-					<div class="col-lg-6 wow fadeInUp delay-06s">
+					<div class="hidden col-lg-6 wow fadeInUp delay-06s">
 						<div class="form">
 							<div id="sendmessage">Your message has been sent. Thank you!</div>
 							<div id="errormessage"></div>
