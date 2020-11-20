@@ -1,7 +1,7 @@
  
 <?php
-	$nombreusuario="root";
-	$passwordbd="dorlan164";
+	$nombreusuario="SGMDG";
+	$passwordbd="q?jXe8a-_5ET";
 	$servidor="localhost";
 	$basedatos="sgmdg";
 	
