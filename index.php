@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include './parts/_header_main.php'
 ?>
@@ -266,4 +267,3 @@ include './parts/_header_main.php'
 
 <?php
 include './parts/_footer_main.php'
-?>
