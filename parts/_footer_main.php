@@ -1,37 +1,58 @@
 <footer class="footer_section" id="contact">
+
 		<div class="container">
 			<section class="main-section contact" id="contact">
 				<div class="contact_section">
+     
 					<h2>Contáctanos</h2>
 					<div class="row">
 						<div class="col-lg-4">
 							<div class="contact_block">
 								<div class="contact_block_icon rollIn animated wow"><span><i class="fa-home"></i></span></div>
-								<span> Calle 21 #223, col. Santo Niño, <br>
-              Chihuahua, Chih., 31000 </span> </div>
+								<span> Calle Juárez y Miguel Hidalgo, Colonia Lebaron, <br>
+              Galeana Chih., CP.31870 </span> </div>
 						</div>
 						<div class="col-lg-4">
 							<div class="contact_block">
 								<div class="contact_block_icon icon2 rollIn animated wow"><span><i class="fa-phone"></i></span></div>
-								<span> 614-120-4456 </span> </div>
+								<span> 636-693-0491 </span> </div>
 						</div>
 						<div class="col-lg-4">
 							<div class="contact_block">
 								<div class="contact_block_icon icon3 rollIn animated wow"><span><i class="fa-pencil"></i></span></div>
 								<span> <a href="mailto:info@sgmdg.org"> info@sgmdg.org </a> </span> </div>
+                                                                
 						</div>
+                                                
 					</div>
 				</div>
-				<div class="row">
+                               
+
+				
+
+<div class="row">
 					<div class="col-lg-6 wow fadeInLeft">
-						<div class="contact-info-box address clearfix">
-							<h3>Envíanos un mensaje para cualquier duda</h3>
-							<p>Contáctanos via e-mail o por nuestras redes sociales, te responderemos lo más rápido posible</p>
-							<p></p>
-						</div>
+
+						 <!-- Start: Newsletter Subscription Form -->
+    <div class="newsletter-subscribe">
+        <div class="container">
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h1 class="text-center">Suscribete&nbsp;</h1>
+                <p class="text-center">Para nosotros es importante que estes enterado de nuestros eventos y noticias enviantos tu E-mail y recibe nuestras noticias.</p>
+            </div>
+            <!-- End: Intro -->
+            <form class="form-inline" method="post">
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Introduce Tu Email"></div>
+                <div class="form-group"><button class="btn btn-primary" type="submit">enviar</button></div>
+            </form>
+        </div>
+    </div>
+    <!-- End: Newsletter Subscription Form -->
+      
 						<ul class="social-link">
 							<li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa-twitter"></i></a></li>
-							<li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa-facebook"></i></a></li>
+							<li class="facebook animated bounceIn wow delay-03s"><a href="https://www.facebook.com/Sociedad-De-Gemas-Y-Minerales-Distrito-Galeana-105529091387409"><i class="fa-facebook"></i></a></li>
 							<!--<li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa-pinterest"></i></a></li>
 							<li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa-google-plus"></i></a></li>
 							<li class="dribbble animated bounceIn wow delay-06s"><a href="javascript:void(0)"><i class="fa-dribbble"></i></a></li>-->

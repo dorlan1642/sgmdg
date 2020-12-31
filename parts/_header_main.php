@@ -72,7 +72,7 @@
                 <ul class="toggle">
                     <li><a href="./index.php">Inicio</a></li>
 					<!-- <li><a href="#service">Servicios</a></li> -->
-					<li><a href="#work_outer">Acerca de</a></li>
+					<li><a href="./aboutus.php">Acerca de</a></li>
 					<li><a href="#Members">Miembros</a></li>
                     <li><a href="#Events">Eventos</a></li>
                     <li><a href="#News">Noticias</a></li>
@@ -81,7 +81,7 @@
                 <ul class="">
                     <li><a href="./index.php">Inicio</a></li>
                     <!-- <li><a href="#service">Servicios</a></li> -->
-					<li><a href="#work_outer">Acerca de</a></li>
+					<li><a href="./aboutus.php">Acerca de</a></li>
 					<li><a href="#Members">Miembros</a></li>
                     <li><a href="#Events">Eventos</a></li>
                     <li><a href="#News">Noticias</a></li>
