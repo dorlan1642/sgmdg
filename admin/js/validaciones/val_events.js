@@ -43,7 +43,7 @@ var carga=function(){
 		}else if (form._submit.value != "Eliminar" || actualizacion.value != "actualizacion"  ) {
 
 			if (form._submit.value != "" || actualizacion.value == "") {
-				validarExtension($('#imagen').val())
+				validarExtension(image)
 			}
 			
 			
@@ -84,7 +84,7 @@ function validarExtension(datos) {
 $('#imagen').change(function () {
 
 $('#texto').text('');
-$('#img').attr('src', '');
+//$('#imagen').attr('src', '');
 
 if(validarExtension($('#imagen').val())) {
 

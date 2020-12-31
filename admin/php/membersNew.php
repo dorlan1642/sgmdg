@@ -20,7 +20,7 @@
 		$id_member = $_POST['id'];
 	
 
-		function generateRandomString($length = 10) { 
+		function generateRandomString($length = 7) { 
 			return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length); 
 		} 
 		$ranadd =   generateRandomString();
@@ -147,7 +147,7 @@
 		}
 
 }else{
-	function generateRandomString($length = 10) { 
+	function generateRandomString($length = 7) { 
 		return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length); 
 	} 
 	$ranadd =   generateRandomString();

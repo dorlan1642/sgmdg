@@ -34,9 +34,7 @@ include './parts/_header_main.php'
 <br>	
 <div class="container">
 <div class="center-block  iframe-container">
-<iframe src="https://www.youtube.com/embed/7KrzZhZs2DM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+<iframe src="https://www.youtube.com/embed/rZ6j3MprxLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -154,7 +152,7 @@ include './parts/_header_main.php'
 		<div class="client_area ">
 			<?php 
 				include "./admin/php/conexion.php";
-				$resultado=$mysqli->query("select * from Members limit 3")or die ($mysqli->error);
+				$resultado=$mysqli->query("select * from Members ORDER BY FIELD (id,8) DESC limit 3")or die ($mysqli->error);
 				$flag=false;
 					while ($fila= mysqli_fetch_array($resultado)) {
 						if($flag == true){$class="flt"; $arrow="quote_arrow2";} else {$class=""; $arrow="quote_arrow";}
