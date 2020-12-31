@@ -28,7 +28,7 @@ include './parts/_header_main.php'
 	</div>
 </section>
 -->
-<!--Top_content-->
+<!--Top_content comentario by Orlando Prueba -->
 
 <br>
 <br>	
