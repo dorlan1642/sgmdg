@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 include './parts/_header_main.php'
 ?>
@@ -34,7 +33,7 @@ include './parts/_header_main.php'
 <br>
 <br>	
 <div class="container">
-<div class="center-block  iframe-container">
+<div class="center-block  iframe-container"id="Video">
 <iframe src="https://www.youtube.com/embed/rZ6j3MprxLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -267,3 +266,4 @@ include './parts/_header_main.php'
 
 <?php
 include './parts/_footer_main.php'
+?>
